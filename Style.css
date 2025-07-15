@@ -281,7 +281,7 @@ main{
     font-size: 25px;
 }
 .course{   
-    padding: 20px 100px;         /* for all other courses  */
+    padding: 20px 100px;         /* for all other courses for web take 15px */
 
 }
 .course a{
@@ -401,6 +401,7 @@ footer{
     height: 60px;
     padding: 10px;
     bottom: 0;
+    width: auto;
 }
 footer h2{
     font-weight: bold;
