@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* control how total size of an element is calculate  */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html {
+  scroll-behavior: smooth;  /* for smooth animation*/
+}
+body{
+    background-color:white;
+}
+/*header*/
+header{
+    background: linear-gradient(120deg, #061B3D, #0B3557);  /* The 120deg is the direction of the gradient.*/
+    /* padding: 18px 40px;  [top-bottom] [left-right] */
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    box-shadow: 0 0 25px rgba(91, 92, 92, 0.4);
+    
+}
+header h1{
+    font-weight: bold;
+    margin-right: auto;
+    font-size: 35px;
+    padding: 3px;
+    margin-top: 5px;
+    
+}
+/*logo*/
+/* .logo{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        
+    } */
+/*navigation*/
+nav{
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+nav a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s; /* for smooth animation*/
+    
+}
+nav a:hover{
+    color: #FFD700; ;
+  /* background-color: #FFD700;
+  /* padding: 6px;
+  border-radius: 5px; */ 
+}
+nav .dropdown-toggle:hover {       /* for explore and business hover*/
+  color: gold !important;
+}
+
+/*search input*/
+.input{
+    padding-left: 36px;
+    background: url('https://cdn-icons-png.flaticon.com/512/54/54481.png') no-repeat 10px center;
+    background-size: 18px 18px; /*18x18 pixels*/
+    height: 32px;
+    width: 660px;
+    border-radius: 15px;
+    background-color: white;
+    border: 1px solid white;
+    outline: none;
+    
+}
+.input:focus{
+    border:2px solid #1E90FF;  
+    box-shadow: 0 0 9px white;
+
+}
+
+
+/* FOR BUSINESS */
+.dropdown-menu button{
+    background-color: #061B3D;
+    border: #061B3D;
+    width: 90px;
+    padding: 5px;
+    border-radius: 8px;
+
+}
+.dropdown-menu button:hover{
+    background-color: #157347;
+}
+
+.body{   /* for caresoul*/
+    border: 1px solid white;
+    box-shadow: 0 0 10px black
+}
+/*For caresoul box*/
+.carousel-item{
+    position: relative;
+    height: 500px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    
+}
+.overlay-box {
+      position: absolute;
+      top: 26%;
+      left: 9%;
+      background:white;
+      color: #111;
+      padding: 30px;
+      border-radius: 12px;
+      width: 400px;
+      box-shadow: 0 0 10px rgb(248, 243, 243)
+      
+}
+
+.overlay-box a{
+    background-color: #061B3D;
+    color: white;
+}
+.text{
+    font-weight: bold;
+    font-size: 35px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 0 0 2px black;
+}
+.text1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 0 0 2px black; */
+}
+main{
+    padding: 30px 100px;
+    
+    
+}
+.card-container{  /*for acceletors*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/* Each column will take 1 fraction of the available space equally*/
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    
+}
+.card{
+    padding: 15px 15px;
+    background-color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    width: 400px;
+    height: auto;
+    border-radius: 15px;
+    text-align: center;
+    
+
+}
+.card img{
+    width: 360px;
+    height: auto;
+   
+}
+.card button{
+    border: 1px solid #0B3557;
+    border-radius: 6px;
+    box-shadow: 0 0 5px black;
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #0B3557;
+    color: white;
+    
+}
+.carrer{        /* for all other carrer acceletors and courses  */
+    padding:5px 100px
+    
+}
+.carrer a{
+    border: 2px solid rgb(54, 54, 235);
+    border-radius: 4px;
+    /* height: 30px; */
+    padding: 12px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(54, 54, 235);
+    text-decoration: none;
+}
+.carrer a:hover{
+    background-color:rgb(179, 179, 247);
+}
+
+.section{     /* for second section*/
+    padding: 10px 100px;
+}
+.text2{
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-shadow: 0 0 2px black;
+}
+.text3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* text-shadow: 0 0 2px black; */
+}
+.space{            /* this is for div in which all skills are theer*/
+    padding: 10px 100px;  
+}
+.skills{   /* for all the links in second section*/
+     text-decoration: none;
+     font-size: 20px;
+     /* font-family: Arial, Helvetica, sans-serif; */
+     font-weight: bold;
+     color: black;
+     margin-left: 15px;
+     text-align: center;
+}
+.skills:hover{
+     text-decoration: underline;
+}
+.card-container1{   /* for courses*/
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    
+
+}
+.card1{
+    padding: 20px 15px;
+    background-color: white;
+    width: 360px;
+    height: auto;
+    border-radius: 10px;
+    /* text-align: center; */
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.card1 button{
+    border: 0.5px solid #061B3D;
+    border-radius: 4px;
+    padding: 4px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    background-color:#0B3557;
+    color: white;
+    margin-right: 10px;
+    margin-top: auto;
+    
+}
+.card1 button a{
+    text-decoration: none;
+    color: white;
+}
+.card1 button:hover{
+    background-color: 	#157347;
+    border: 1px solid #157347;
+}
+
+.card1 img{
+    width: 320px;
+    height: 250px;
+}
+.card1 h3{
+    font-size: 22px;
+}
+.card1 h4{
+   
+    font-size: 15px;
+}
+.card1 h2{
+    font-weight: bold;
+    font-size: 25px;
+}
+.course{   
+    padding: 20px 15px;         /* for all other courses  */
+
+}
+.course a{
+    border: 2px solid rgb(54, 54, 235);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    color: rgb(54, 54, 235);
+    padding: 12px;
+
+}
+.course a:hover{
+    background-color: rgb(179, 179, 247);
+}
+.text4{
+    padding: 20px 0px;
+    text-align: center;
+    text-shadow: 0 0 2px black;
+    background-color: #f8f9fa;
+}
+.images{
+    background-color: #f8f9fa;
+
+}
+.images img{   /* for company image*/
+      width:100%;
+      
+}
+
+/* .company{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    justify-content: center;
+    padding: 10px  100px;
+    background-color: white;
+}
+.company img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+} */
+
+/*  AI for business leaders*/
+.ai{
+    height: 500px;
+    
+}
+.ai img{
+    width: 100%;
+    height: 500px;
+
+}
+.ai1{
+    position: relative;
+    height: 400px;
+
+}
+.ai1 h1{
+    position: absolute;
+    bottom: 200%;
+    left: 10%;
+}
+.ai1 h6{
+    position: absolute;
+    bottom: 185%;
+    left: 10%;
+    width: 300px;
+}
+.ai1 button{
+    position: absolute;
+    left: 10%;
+    bottom: 175%;
+    padding: 5px;
+    border: 1px solid #061B3D;
+    background-color: #061B3D;
+    width: 130px;
+    border-radius: 5px;
+}
+.ai1 button a{
+    color: white;
+    text-decoration: none;
+}
+.ai1 button:hover{
+    background-color: #157347;
+    border: 1px solid #157347;
+    
+}
+/*review */
+.text5{
+    padding: 20px ;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 0 0 2px black;
+    background-color: whitesmoke;
+}
+.card-container2{   /* for review*/
+    padding: 10px 100px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+.card-container2 p{
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 30px;
+    
+}
+footer{
+    background: linear-gradient(120deg, #061B3D, #0B3557);  /* The 120deg is the direction of the gradient.*/
+    color: white;
+    height: 60px;
+    padding: 10px;
+    bottom: 0;
+}
+footer h2{
+    font-weight: bold;
+    margin-left:auto;
+    display: inline;
+}
+footer h5{
+    display: inline;
+    font-size: 15px;
+    margin-left: auto;
+}
+.foot{
+    display: inline;
+    margin-left: 400px;
+}
+.foot a{
+    color: white;
+    text-decoration: none;
+}
+.eng{
+    color: white;
+    text-decoration: none;
+    margin-left: 620px;
+}
+
+
+
+

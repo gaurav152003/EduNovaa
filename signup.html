@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup</title>
+  <link rel="shortcut icon" href="images/9183170.png">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    body {
+      background-color: white;
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */
+    }
+    header{
+      background-color: #0B3557;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+    header a{
+            text-decoration: none;
+            color: white;
+        }
+
+    /*.container {
+      display: flex;
+      gap: 100px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap; /* makes it responsive 
+    }
+
+    .image img {
+      width: 700px;
+      height: 680px;
+      max-width: 100%;
+    }*/
+    .container{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      align-items: center;
+      justify-content: center;
+      }
+    .card{
+         padding: 60px;
+         width: 700px;
+         height: 500px;
+      }
+    .card img{
+        width: 680px;
+        height: 580px;
+    }
+    
+
+    .box {
+      width: 450px;
+      max-width: 100%;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      box-shadow: 0 0 10px black;
+      border-radius: 10px;
+      font-weight: bold;
+      
+      margin-top: 40px;
+    }
+
+    .input {
+      width: 100%;
+      height: 30px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      outline: none;
+      padding: 6px;
+    }
+
+    .signup {
+      width: 100%;
+      height: 35px;
+      border: 1px solid #0B3557;
+      border-radius: 15px;
+      background-color: #0B3557;
+      color: white;
+      margin-top: 20px;
+      box-shadow: 0 0 5px black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html"><h1> EduNova</h1></a>
+  </header>
+  <div class="container">
+    <div class="card">
+      <img src="images/signin.png"  />
+    </div>
+    <div class="card">
+    <form action="index.html" class="box">
+      <label for="name">Name :</label><br /><br />
+      <input type="text" placeholder="Enter Your Name" required class="input" /><br /><br />
+      <label for="email">Email Address:</label><br /><br />
+      <input type="email" placeholder="Enter Your Email Address" required class="input" /><br /><br />
+      <label for="password">Password:</label><br /><br />
+      <input type="password" placeholder="Enter Password" required class="input" /><br /><br />
+      <label for="confirm-password">Confirm Password:</label><br /><br />
+      <input type="password" placeholder="Confirm Password" required class="input" /><br /><br />
+      <button type="submit" class="signup">SIGN UP</button>
+    </form>
+    </div>
+  </div>
+</body>
+</html>
