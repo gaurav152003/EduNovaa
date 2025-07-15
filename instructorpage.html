@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>instructor page</title>
+    <link rel="shortcut icon" href="images/9183170.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        body{
+            background-color: whitesmoke;
+            background-image: url("images/flat-lay-stationary-arrangement-desk-with-copy-space-coffee_23-2148404490.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            background-color: #0B3557;;
+            text-align: center;
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .card{
+            width: 800px;
+            height: auto;
+            background-color: white;
+            margin-left: 6%;
+            padding: 50px;
+            border:  0.5px solid #ccc;
+            box-shadow: 0 0 10px black;
+            margin-top: 3%;
+        }
+        .card h1{
+            font-weight: bold;
+            text-align: center;
+        }
+        .radio1{
+            background-color: white;
+            border: 0.5px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .radio1:hover{
+            background-color: skyblue;
+        }
+        .radio2{
+            border: 0.5px solid #ccc;
+            padding: 10px;
+            border-radius: 10px;
+            outline: none;
+            width: 700px;
+        }
+        .card button{
+            background-color: #0B3557;
+            border: #0B3557;
+            border-radius: 10px;
+            padding: 10px;
+            width: 700px;
+            color: white;
+        }
+        .card button:hover{
+            background-color:#157347;
+        }
+
+    </style>
+</head>
+<body>
+    <header><h1><a href="index.html">EduNova</a></h1></header>
+
+    <!-- form-->
+     
+     <div class="card">
+  <h1>Share Your Knowledge</h1><hr>
+  <h5>Let EduNova help you turn your expertise into a powerful course to educate and inspire students around the world.</h5><br>
+
+  <form action="Instructorhomepage.html">
+    <h4>What kind of teaching have you done before?</h4>
+    <div class="radio1"><input type="radio" name="option" required> In person, informally</div><br>
+    <div class="radio1"><input type="radio" name="option" required> In person, professionally</div><br>
+    <div class="radio1"><input type="radio" name="option" required> Online</div><br>
+    <div class="radio1"><input type="radio" name="option" required> Other</div><br>
+
+    <h4>How much of a video “pro” are you?</h4>
+    <div class="radio1"><input type="radio" name="option1" required> I’m a beginner</div><br>
+    <div class="radio1"><input type="radio" name="option1" required> I have some knowledge</div><br>
+    <div class="radio1"><input type="radio" name="option1" required> I’m experienced</div><br>
+    <div class="radio1"><input type="radio" name="option1" required> I have videos ready to upload</div><br>
+
+    <h4>Do you have an audience to share your course with?</h4>
+    <div class="radio1"><input type="radio" name="option2" required> Not at the moment</div><br>
+    <div class="radio1"><input type="radio" name="option2" required> I have a small following</div><br>
+    <div class="radio1"><input type="radio" name="option2" required> I have a sizeable following</div><br>
+
+    <h4>Which category best fits the course you want to create?</h4>
+    <select name="course" class="radio2" required>
+      <option value="">-- Select Category --</option>
+      <option>Development</option>
+      <option>Communication</option>
+      <option>Data Science</option>
+      <option>Design</option>
+      <option>Marketing</option>
+      <option>Business</option>
+      <option>Health & Fitness</option>
+      <option>Music</option>
+      <option>Photography</option>
+      <option>Other</option>
+    </select><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit & Continue</button>    <!--do not wrap the <button> in an <a> tag. It will bypass form validation and just follow the link.-->
+  </form>
+</div>
+
+</body>
+</html>
