@@ -281,7 +281,7 @@ main{
     font-size: 25px;
 }
 .course{   
-    padding: 20px 15px;         /* for all other courses  */
+    padding: 20px 50px;         /* for all other courses  */
 
 }
 .course a{
