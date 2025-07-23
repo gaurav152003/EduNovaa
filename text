@@ -9,8 +9,6 @@
     <link rel="stylesheet" href="Style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
 
 
 </head>
@@ -19,13 +17,13 @@
      <header>
         <h1 class="logo"> EduNova </h1>
         <nav>
-        <input type="text" class="search " placeholder="  Search For Anything" id="">
+        <input type="text" class="input " placeholder="  Search For Anything" id="">
         <a href="signup.html">Sign up</a>
         <a href="login.html">Log in</a>
-        
         <!-- bootstrap dropdown-->
         <div class="dropdown">
-            <a class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"> <!--role="button"	Tells assistive tech (like screen readers) this link behaves like a button. data-bs-toggle="dropdown"	Activates Bootstrap's dropdown behavior via JavaScript (no custom JS needed).-->
+            <a class="dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"> <!--role="button"	Tells assistive tech (like screen readers) this link behaves like a button.
+data-bs-toggle="dropdown"	Activates Bootstrap's dropdown behavior via JavaScript (no custom JS needed).-->
               Explore
             </a>
             <ul class="dropdown-menu" style="width: 300px; padding: 10px;">
@@ -60,16 +58,17 @@
         </div>
         <a href="Shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
         <a href="profile.html"><i class="fa fa-user"></i> </i></a>
-        </nav>
-      </header> <br><br>
+    </nav>
+    </header> <br><br>
 
 
   
     
     <!--body-->
     <!--Caresoul-->
-    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
 
     <!-- Slide 1 -->
      <div class="carousel-item active">
@@ -79,28 +78,29 @@
         <p>Technology and the world of work change fast-with us,you're faster.Get the skills to achieve goals and stay compititive</p>
         <a href="#allcourses" class="btn btn-warning fw-bold">View Skills</a>
       </div>
-     </div>
+    </div>
 
     <!-- Slide 2 -->
-      <div class="carousel-item ">
-        <img src="images/maincaresould=black.png" class="d-block w-100" alt="...">
-        <div class="overlay-box">
-          <h2>Skills That Start Careers</h2>
-          <p>Introducing Career Accelerators - focus on the skills and real-world experience that'll get you noticed.</p>
-          <a href="#career" class="btn btn-primary fw-bold">Explore Career Accelerators</a>
-        </div>
+    
+    <div class="carousel-item ">
+      <img src="images/maincaresould=black.png" class="d-block w-100" alt="...">
+      <div class="overlay-box">
+        <h2>Skills That Start Careers</h2>
+        <p>Introducing Career Accelerators - focus on the skills and real-world experience that'll get you noticed.</p>
+        <a href="#carrer" class="btn btn-primary fw-bold">Explore Career Accelerators</a>
       </div>
+    </div>
    
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-        <img src="images/maincaresoul2.png" class="d-block w-100" alt="...">
-        <div class="overlay-box">
-          <h2>Subscribe to the best of EduNova</h2>
-          <p>With personal plans you get access to 26,000+ of our top-rated courses in tech,business,and more</p>
-          <a href="plans_pricing.html" class="btn btn-success fw-bold">View plans</a>
-        </div>
-      </div>
 
+    <!-- Slide 3 -->
+   <div class="carousel-item">
+      <img src="images/maincaresoul2.png" class="d-block w-100" alt="...">
+      <div class="overlay-box">
+        <h2>Subscribe to the best of EduNova</h2>
+        <p>With personal plans you get access to 26,000+ of our top-rated courses in tech,business,and more</p>
+        <a href="plans_pricing.html" class="btn btn-success fw-bold">View plans</a>
+      </div>
+    </div>
     <!--slide4-->
     <div class="carousel-item">
       <img src="images/maincaresoul1.png" class="d-block w-100" alt="...">
@@ -110,29 +110,30 @@
         <a href="#business" class="btn btn-warning fw-bold">Find Courses</a>
       </div>
     </div>
-    </div>
 
-    <!-- Controls -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
       
 
-    <!--acceletors-->
-    <section class="acceletors">
-      <div id="career">
+<!--acceletors-->
+<main>
+      <div id="carrer">
           <div class="text">Ready to reimagine your career?</div>
           <p class="text1"> Get the skills and real-world experience employers want with Career Accelerators.</p>
       </div><br>
-      <div>
+      <section>
         <div  class="card-container">
         <div class="card">
           <a href=" https://youtu.be/suATPK45sjk?si=IdHUR_A_Bnfb1tE2"  ><img src="images/webdeveloper 1.png" alt=""></a> <!--/*target="_blank"*/ -->
@@ -176,17 +177,19 @@
           <button >48k raitings</button>
           <button>57.6 total hours</button>
         </div>
-        </div>
-    </div>
-  </section>
-  <div class="career" >
-    <a href="#career">All Career Accelerators</a>
-  </div><br><br>
+      </div>
 
-
+        
+      </section>
+    </main>
+    
+    <div class="carrer" >
+      <a href="#carrer">All Career Accelerators</a>
+    </div><br><br>
 
     <!-- Courses-->
-    <section class="coursee">     <!--used to group related content on a webpage.-->
+
+    <section class="section">     <!--used to group related content on a webpage.-->
       <div class="text2"> All the skills you need in one place</div>
       <p class="text3">From critical skills to technical topics, Udemy supports your professional development.</p>
 
@@ -201,15 +204,24 @@
       </div><br>
       
       <div class="card-container1">
+        <div class="card1" id="datascience"> <!-- section id created to link in anchor tag-->
+          <a href="https://youtu.be/VijY1Lh8ruo?si=mA8QP43AaGwTuvsC"> <img src="images/data-science-frameworks-thumbnail.jpg" alt=""> </a>
+          <h3>Data Science And Popular Frameworks</h3>
+          <h4>&#9733; 4.7  (245,140)</h4>
+          <h2>	&#8377;4600</h2>
+          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button><a href="Shoppingcart.html">Add to Cart</a></button>
+
+        </div>
         <div class="card1" id="datascience">
           <a href="https://youtu.be/7eh4d6sabA0?si=ULneNoeI0Y-C79ec"> <img src="images/machine.jpeg" alt=""> </a>
           <h3>Machine Learning, Data Science and Generative AI with Python</h3>
           <h4>&#9733; 4.9  (145,140)</h4>
           <h2>	&#8377;5800</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+        </div>
         <div class="card1" id="datascience">
           <a href="https://youtu.be/p4pHsuEf4Ms?si=Rns3RJUsF3AQLzAt"> <img src="images/Ai.jpg" alt=""> </a>
           <h3>Artificial Intelligence A-Z 2025: Agentic AI, Gen AI, and RL</h3>
@@ -217,17 +229,19 @@
           <h2>	&#8377;7200</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+
+        </div>
         <div class="card1" id="datascience">
           <a href="https://youtu.be/LHBE6Q9XlzI?si=u_5kssUoDittYIWm"> <img src="images/1714026391309.png" alt=""> </a>
           <h3>Python for Data Science and Machine Learning Bootcamp</h3>
           <h4>&#9733; 4.6(815,140)</h4>
           <h2>	&#8377;5309</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+
+        </div>
         <div class="card1">
           <a href="https://youtu.be/mXjZQX3UzOs?si=EFDAsiaviKfvrsjs" id="webdevelopment"> <img src="images/android.jpg" alt=""> </a>
           <h3>Android Java Masterclass - Become an App Developer</h3>
@@ -235,8 +249,8 @@
           <h2>	&#8377;3800</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+        </div>
         <div class="card1" id="web development">
           <a href="https://youtu.be/eIrMbAQSU34?si=l9am1vQ07JZGebwQ"> <img src="images/java.jpg" alt=""> </a>
           <h3>Java from Zero to First Job, Practical Guide, 2000+ examples</h3>
@@ -244,17 +258,19 @@
           <h2>	&#8377;1800</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
+
         </div>
 
-        <div class="card1" id="web development">
+         <div class="card1" id="web development">
           <a href="https://youtu.be/nu_pCVPKzTk?si=DXBl2EnmThJRuGE4"> <img src="images/web development.jpeg" alt=""> </a>
           <h3>The Complete Fullstack Web Development Bootcamp</h3>
           <h4>&#9733; 4.8  (545,140)</h4>
           <h2>	&#8377;4000</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+
+        </div>
         <div class="card1" id="web development">
           <a href="https://youtu.be/RGKi6LSPDLU?si=9dny6z681VN01ZEN"> <img src="images/react.jpg" alt=""> </a>
           <h3>React - The Complete Guide 2025 (incl. Next.js, Redux)</h3>
@@ -262,24 +278,25 @@
           <h2>	&#8377;4800</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+        </div>
         <div class="card1" id="leadership">
           <a href="https://youtu.be/qQ_QICStEOo?si=0u-iaTTNtA-1jgBB"> <img src="images/course-thumbnail-resilience-leadership.png" alt=""> </a>
           <h3>Lean Leadership Skills, Lean Culture & Lean Management</h3>
           <h4>&#9733; 4.4 (55,140)</h4>
           <h2>	&#8377;4418</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
-          <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
-
-        <div class="card1" id="leadership">
-          <a href="https://youtu.be/eXDNkwIeOqA?si=XLJrt7jWwLXdktEk"> <img src="images/leadership.png" alt=""> </a>
-          <h3>Fundamentals of Successful Leadership - Leading with Impact</h3>
-          <h4>&#9733; 4.2 (15,140)</h4>
-          <h2>	&#8377;3218</h2>
          <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
+        </div>
+        <div class="card1" id="communication">
+          <a href="https://youtu.be/dHAbmoFHqgA?si=GODkesjdvo87WPtd"> <img src="images/communication-skills-thumbnail.jpg" alt=""> </a>
+          <h3>The Complete Communication Skills Master Class for Life</h3>
+          <h4>&#9733; 4.7  (275,140)</h4>
+          <h2>	&#8377;3600</h2>
+          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button><a href="Shoppingcart.html">Add to Cart</a></button>
+
+
         </div>
 
         <div class="card1" id="itcertification">
@@ -289,8 +306,9 @@
           <h2>	&#8377;5200</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+
+        </div>
         <div class="card1" id="itcertification">
           <a href="https://youtu.be/NhDYbskXRgc?si=2Y1BcFK9Gm8GP2Ed"> <img src="images/1676326336050.jpeg" alt=""> </a>
           <h3>AWS Cloud Practitioner Certification</h3>
@@ -298,14 +316,15 @@
           <h2>	&#8377;4670</h2>
           <button> <a href="Buynow.html">Buy Now</a></button>
          <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
-        <div class="card1" id="communication">
-          <a href="https://youtu.be/dHAbmoFHqgA?si=GODkesjdvo87WPtd"> <img src="images/communication-skills-thumbnail.jpg" alt=""> </a>
-          <h3>The Complete Communication Skills Master Class for Life</h3>
-          <h4>&#9733; 4.7  (275,140)</h4>
-          <h2>	&#8377;3600</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+
+        </div>
+        <div class="card1" id="leadership">
+          <a href="https://youtu.be/eXDNkwIeOqA?si=XLJrt7jWwLXdktEk"> <img src="images/leadership.png" alt=""> </a>
+          <h3>Fundamentals of Successful Leadership - Leading with Impact</h3>
+          <h4>&#9733; 4.2 (15,140)</h4>
+          <h2>	&#8377;3218</h2>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
         </div>
         
@@ -314,35 +333,41 @@
           <h3>Business Data Analysis with Microsoft Excel and Power BI</h3>
           <h4>&#9733; 4.2 (5,140)</h4>
           <h2>	&#8377;2600</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
-        </div>
 
+
+        </div>
         <div class="card1" id="Ai">
           <a href="https://youtu.be/wUHBoNOmGzs?si=dWIP143ef12tZKzT"> <img src="images/6586855_e1cc_5.png" alt=""> </a>
           <h3>AI for Business Leaders: Master AI Strategy </h3>
           <h4>&#9733; 4.5(5,140)</h4>
           <h2>	&#8377;2899</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
         </div>
-
         <div class="card1" id="Ai">
           <a href="https://youtu.be/WDkC8ZkOBGg?si=1IfBrQsuI16LIefe"> <img src="images/5954420_ae65.webp" alt=""> </a>
           <h3>The Executives guide to AI - AI for Business Leaders </h3>
           <h4>&#9733; 4.2(140)</h4>
           <h2>	&#8377;2299</h2>
-          <button> <a href="Buynow.html">Buy Now</a></button>
+         <button> <a href="Buynow.html">Buy Now</a></button>
           <button><a href="Shoppingcart.html">Add to Cart</a></button>
         </div>
+        
+      
+      
       </div>
-    </section>
-    <div class="course" >
-      <a href="#allcourses">Show All Courses</a>
-    </div><br><br>
+      </section>
+
+      <div class="course" >
+        <a href="#allcourses">Show All Courses</a>
+      </div><br><br>
 
 
       
+
+
      <!--Review-->
      <section>
       <div class="text5">See what others are achieving through learning</div>
@@ -350,17 +375,17 @@
       <p > &ldquo; <br>Because of this course I was able to clear my two interviews... Thanks for making such wonderful content.
       <br><br><br><br><br><i class="fa-solid fa-user"></i> <span>Gaurav</span></a></p>
       <p > &ldquo; <br>This has helped me so much in my career...I joined as a frontend engineer aand eventually transitioned to full stack engineer with the help of this course.
-      <br><br><br><i class="fa-solid fa-user"></i> <span>Ninad</span></a></p>
-      <p > &ldquo; <br>Today, I am a software developer, and I credit a significant part of my success to the solid foundation laid by this course.
-      <br><br><br><br><i class="fa-solid fa-user"></i> <span>Shivam</span></a></p>
-      <p > &ldquo; <br>I would highly recommend this Web Development Bootcamp to anyone interested in pursuing a career in web development or looking to enhance their skills in this field.
-      <br><br><br><i class="fa-solid fa-user"></i> <span>Jhon</span></a></p>
-      <p > &ldquo; <br>I really appreciate the flexibility I get with EduNova Plus. I can try any course and switch to another one for no additional cost. This motivates me to learn even more!
-      <br><br><i class="fa-solid fa-user"></i> <span>Rey</span></a></p>
+        <br><br><br><i class="fa-solid fa-user"></i> <span>Ninad</span></a></p>
+        <p > &ldquo; <br>Today, I am a software developer, and I credit a significant part of my success to the solid foundation laid by this course.
+          <br><br><br><br><i class="fa-solid fa-user"></i> <span>Shivam</span></a></p>
+          <p > &ldquo; <br>I would highly recommend this Web Development Bootcamp to anyone interested in pursuing a career in web development or looking to enhance their skills in this field.
+            <br><br><br><i class="fa-solid fa-user"></i> <span>Jhon</span></a></p>
+            <p > &ldquo; <br>I really appreciate the flexibility I get with EduNova Plus. I can try any course and switch to another one for no additional cost. This motivates me to learn even more!
+              <br><br><i class="fa-solid fa-user"></i> <span>Rey</span></a></p>
       </div>
     </section><br><br><br>
 
-     <!-- ai caresoul for business-->
+    <!-- ai for business-->
      <section class="ai">
       <img src="images/carseoulAi.png"  alt="">
       <div class="ai1">
@@ -368,9 +393,9 @@
           <h6>Build an AI-habit for you and your team that builds hands-on skills to help you lead effectively.</h6>
           <button><a href="#Ai">Start Learning</a></button>
       </div>
-    </section>
+      </section>
 
-     <!--companies-->
+    <!--companies-->
      <section class="images">
       <h4 class="text4">Trusted by over 16,000 companies and millions of learners around the world</h4>
       <img src="images/companiesall.png" alt=""> <br><hr>
@@ -386,110 +411,15 @@
       </div> -->
      </section>
 
-     <!-- footer-->
+    <!-- footer-->
 
-     <footer>
-      <div class="foot">
-      <div >
+    <footer>
+      <div>
          <h4>Explore top skills and certifications</h4>
-      </div><hr>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-4">
-            <h5>In-demand Careers</h5>
-            <h6><a href="">Data Scientist</a></h6>
-            <h6><a href="">Full Stack Web Developer</a></h6>
-            <h6><a href="">Cloud Engineer</a></h6>
-            <h6><a href="">Project Manager</a></h6>
-            <h6><a href="">Game Developer</a></h6>
-            <h6><a href="">All Career Accelerators</a></h6>
-        </div> 
-        <div class="col-4">
-            <h5>Web Development</h5>
-            <h6><a href="">Web Development</a></h6>
-            <h6><a href="">JavaScript</a></h6>
-            <h6><a href="">React JS</a></h6>
-            <h6><a href="">Angular</a></h6>
-            <h6><a href="">Java</a></h6>
-        </div> 
-        <div class="col-4">
-            <h5>IT Certification</h5>
-            <h6><a href="">Amazon AWS</a></h6>
-            <h6><a href="">AWS Certified Cloud Practitioner</a></h6>
-            <h6><a href="">AZ-900:Microsoft Azure Fundamentals</a></h6>
-            <h6><a href="">AWS Certified Solutions Architect - Associate</a></h6>
-            <h6><a href="">Kubernetes</a></h6>
-        </div>
-      </div><br><br>
-
-      <div class="row"> 
-        <div class="col-4">
-            <h5>Data Science</h5>
-            <h6><a href="">Data Science</a></h6>
-            <h6><a href="">Python</a></h6>
-            <h6><a href="">Machine Learning</a></h6>
-            <h6><a href="">ChatGpt</a></h6>
-            <h6><a href="">Deep Learning</a></h6>
-        </div> 
-        <div class="col-4">
-            <h5>Communication</h5>
-            <h6><a href="">Communication Skills</a></h6>
-            <h6><a href="">Presentation Skill</a></h6>
-            <h6><a href="">Public Speaking</a></h6>
-            <h6><a href="">Writing</a></h6>
-            <h6><a href="">PowerPoint</a></h6>
-        </div> 
-        <div class="col-4">
-            <h5>Business Analytics & Intelligence</h5>
-            <h6><a href="">Microsoft Excel</a></h6>
-            <h6><a href="">SQL</a></h6>
-            <h6><a href="">Microsoft Power BI</a></h6>
-            <h6><a href="">Data Analysis</a></h6>
-            <h6><a href="">Business Analysis</a></h6>
-        </div> 
+        
       </div>
-    </div>
-
-      <div class="foot1">
-        <div class="row">
-          <div class="col-4">
-            <h5>About</h5>
-            <h6><a href="aboutus.html">About US</a></h6>
-            <h6><a href="#career">Careers</a></h6>
-            <h6><a href="contactus.html">Contact US</a></h6>
-            <h6><a href="">Blog</a></h6>
-            <h6><a href="">Investors</a></h6>
-          </div> 
-          <div class="col-4">
-              <h5>Discover EduNova</h5>
-              <h6><a href="">Get The APP</a></h6>
-              <h6><a href="">Teach On EduNova</a></h6>
-              <h6><a href="">Plans and Pricing</a></h6>
-              <h6><a href="">Affiliate</a></h6>
-              <h6><a href="">Help and Support</a></h6>
-          </div>  
-          <div class="col-4">
-              <h5>Legal & Accessibility</h5>
-              <h6><a href="">Accessibility statement</a></h6>
-              <h6><a href="">Privacy policy</a></h6>
-              <h6><a href="">Sitemap</a></h6>
-              <h6><a href="">Terms</a></h6>
-          </div> 
-        </div><hr>
-
-        <div class="icon">
-          <h4 style="display: inline;">EduNova</h4>
-          <p style="display: inline;">© 2025 EduNova Inc. All rights reserved.</p>
-          <a style="color: white;" href="#"><i class="bi bi-facebook"></i></a>
-          <a style="color: white;" href="#"><i class="bi bi-instagram"></i></a>
-          <a style="color: white;" href="#"><i class="bi bi-linkedin"></i></a>
-          <a style="color: white;" href="#"><i class="bi bi-twitter"></i></a>
-          <a style="color: white;" href="#"><i class="bi bi-youtube"></i></a>
-        </div>
-      </div>
-    
     </footer>
 </body>
 </html>
 
-<!--The <i> tag originally stands for "italic" in HTML. But in modern web development, it's often used as a placeholder for icons -->
+         <!--The <i> tag originally stands for "italic" in HTML. But in modern web development, it's often used as a placeholder for icons -->

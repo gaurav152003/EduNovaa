@@ -2,67 +2,58 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  /* control how total size of an element is calculate  */
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family:'Times New Roman', Times, serif;
 }
+
 html {
   scroll-behavior: smooth;  /* for smooth animation*/
 }
+
 body{
     background-color:white;
 }
+
 /*header*/
 header{
-    background: linear-gradient(120deg, #061B3D, #0B3557);  /* The 120deg is the direction of the gradient.*/
-    /* padding: 18px 40px;  [top-bottom] [left-right] */
+    background: linear-gradient(120deg, #061B3D, #0B3557);  /* The 120deg is the direction of the gradient.*//* padding: 18px 40px;  [top-bottom] [left-right] */
     padding: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    box-shadow: 0 0 25px rgba(91, 92, 92, 0.4);
-    
+    box-shadow: 0 0 25px rgba(91, 92, 92, 0.4);   
 }
 header h1{
     font-weight: bold;
-    margin-right: auto;
+    margin-right:auto;
     font-size: 35px;
     padding: 3px;
-    margin-top: 5px;
-    
+    margin-top: 5px; 
+    margin-left: 1%; 
 }
-/*logo*/
-/* .logo{
-        font-size: 28px;
-        font-weight: bold;
-        color: white;
-        margin: auto;
-        
-    } */
-/*navigation*/
+
+/*navigation Bar*/
 nav{
     display: flex;
-    gap: 18px;
+    gap: 15px;
     align-items: center;
+    margin-right: 1%;
 }
 nav a{
     font-size: 15px;
     text-decoration: none;
     color: white;
-    transition: color 0.3s; /* for smooth animation*/
-    
+    transition: color 0.3s; /* for smooth animation*/   
 }
 nav a:hover{
-    color: #FFD700; ;
-  /* background-color: #FFD700;
-  /* padding: 6px;
-  border-radius: 5px; */ 
+     color: #FFD700; 
 }
-nav .dropdown-toggle:hover {       /* for explore and business hover*/
+nav .dropdown-toggle:hover { /* for explore and business hover*/
   color: gold !important;
 }
 
 /*search input*/
-.input{
+.search{
     padding-left: 36px;
     background: url('https://cdn-icons-png.flaticon.com/512/54/54481.png') no-repeat 10px center;
     background-size: 18px 18px; /*18x18 pixels*/
@@ -71,33 +62,31 @@ nav .dropdown-toggle:hover {       /* for explore and business hover*/
     border-radius: 15px;
     background-color: white;
     border: 1px solid white;
-    outline: none;
-    
+    outline: none;    
 }
-.input:focus{
-    border:2px solid #1E90FF;  
-    box-shadow: 0 0 9px white;
-
+.search:focus{
+    border:2px solid #429efb;  
+    box-shadow: 0 0 5px 1px white;
 }
 
-
-/* FOR BUSINESS */
+/* FOR EduNova BUSINESS */
 .dropdown-menu button{
     background-color: #061B3D;
     border: #061B3D;
     width: 90px;
     padding: 5px;
     border-radius: 8px;
-
 }
 .dropdown-menu button:hover{
     background-color: #157347;
 }
 
-.body{   /* for caresoul*/
+ /* for caresoul*/
+.body{  
     border: 1px solid white;
     box-shadow: 0 0 10px black
 }
+
 /*For caresoul box*/
 .carousel-item{
     position: relative;
@@ -105,8 +94,7 @@ nav .dropdown-toggle:hover {       /* for explore and business hover*/
 }
 .carousel-item img{
     width: 100%;
-    height: 100%;
-    
+    height: 100%;   
 }
 .overlay-box {
       position: absolute;
@@ -117,33 +105,36 @@ nav .dropdown-toggle:hover {       /* for explore and business hover*/
       padding: 30px;
       border-radius: 12px;
       width: 400px;
-      box-shadow: 0 0 10px rgb(248, 243, 243)
-      
+      box-shadow: 0 0 10px rgb(248, 243, 243)  
 }
-
 .overlay-box a{
     background-color: #061B3D;
     color: white;
 }
+
+/*FOR ACCELETORS */
+.acceletors{
+    padding: 30px 100px;    
+}
 .text{
     font-weight: bold;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
     margin-top: 30px;
-    text-shadow: 0 0 2px black;
+    text-shadow: 0 1px 1px rgb(132, 131, 131);
 }
 .text1{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* text-shadow: 0 0 2px black; */
 }
-main{
-    padding: 30px 100px;
-    
-    
+.content{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
-.card-container{  /*for acceletors*/
+.card-container{ 
     display: grid;
     grid-template-columns: repeat(3,1fr);/* Each column will take 1 fraction of the available space equally*/
     gap: 20px;
@@ -154,35 +145,29 @@ main{
 .card{
     padding: 15px 15px;
     background-color: whitesmoke;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: auto;
     border-radius: 15px;
     text-align: center;
-    
-
 }
 .card img{
     width: 360px;
-    height: auto;
-   
+    height: auto;   
 }
 .card button{
     border: 1px solid #0B3557;
     border-radius: 6px;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
     margin-top: 8px;
     text-align: center;
-    font-weight: bold;
     background-color: #0B3557;
-    color: white;
-    
+    color: white;  
 }
-.carrer{        /* for all other carrer acceletors and courses  */
-    padding:5px 100px
-    
+.career{        /* for all other carrer acceletors and courses  */
+    padding:5px 100px   
 }
-.carrer a{
+.career a{
     border: 2px solid rgb(54, 54, 235);
     border-radius: 4px;
     /* height: 30px; */
@@ -191,32 +176,32 @@ main{
     color: rgb(54, 54, 235);
     text-decoration: none;
 }
-.carrer a:hover{
+.career a:hover{
     background-color:rgb(179, 179, 247);
 }
 
-.section{     /* for second section*/
+/*FOR COURSES */
+.coursee{ 
     padding: 10px 100px;
 }
 .text2{
     font-weight: bold;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 35px;
-    text-shadow: 0 0 2px black;
+    font-size: 40px;
+    text-shadow: 0 1px 1px rgb(132, 131, 131);
 }
 .text3{
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /* text-shadow: 0 0 2px black; */
 }
-.space{            /* this is for div in which all skills are theer*/
+.space{      /* this is for div in which all skills are theer*/
     padding: 10px 100px;  
 }
-.skills{   /* for all the links in second section*/
+.skills{     /* for all the links in second section*/
      text-decoration: none;
      font-size: 20px;
-     /* font-family: Arial, Helvetica, sans-serif; */
      font-weight: bold;
      color: black;
      margin-left: 15px;
@@ -225,36 +210,34 @@ main{
 .skills:hover{
      text-decoration: underline;
 }
-.card-container1{   /* for courses*/
+.card-container1{   
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
     justify-content: center;
     background-color: white;
-    
-
 }
 .card1{
     padding: 20px 15px;
     background-color: white;
-    width: 360px;
+    width: auto;
     height: auto;
     border-radius: 10px;
+    border: 1px solid #ccc;
     /* text-align: center; */
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
 }
 .card1 button{
     border: 0.5px solid #061B3D;
-    border-radius: 4px;
+    border-radius:5px;
     padding: 4px;
     width: 100px;
     text-align: center;
-    box-shadow: 0 0 5px black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color:#0B3557;
     color: white;
     margin-right: 10px;
-    margin-top: auto;
-    
+    margin-top: auto;  
 }
 .card1 button a{
     text-decoration: none;
@@ -264,25 +247,25 @@ main{
     background-color: 	#157347;
     border: 1px solid #157347;
 }
-
 .card1 img{
-    width: 320px;
+    width: 100%;
     height: 250px;
 }
 .card1 h3{
-    font-size: 22px;
+    font-size: 17px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
 }
 .card1 h4{
-   
-    font-size: 15px;
+    font-size: 13px;
 }
 .card1 h2{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .course{   
-    padding: 20px 15px;         /* for all other courses for web take 15px */
-
+    padding: 10px 100px;  /* for all other courses for web take 15px */
 }
 .course a{
     border: 2px solid rgb(54, 54, 235);
@@ -291,69 +274,66 @@ main{
     border-radius: 4px;
     color: rgb(54, 54, 235);
     padding: 12px;
-
 }
 .course a:hover{
     background-color: rgb(179, 179, 247);
 }
-.text4{
-    padding: 20px 0px;
+
+/* FOR REVIEWS */
+.text5{
+    padding: 20px ;
     text-align: center;
-    text-shadow: 0 0 2px black;
-    background-color: #f8f9fa;
+    font-weight: bold;
+    font-size: 30px;
+   text-shadow: 0 1px 1px rgb(132, 131, 131);
+    background-color: whitesmoke;
 }
-.images{
-    background-color: #f8f9fa;
-
-}
-.images img{   /* for company image*/
-      width:100%;
-      
-}
-
-/* .company{
+.card-container2{  
+    padding: 10px 100px;
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(5,1fr);
     justify-content: center;
-    padding: 10px  100px;
-    background-color: white;
+    gap: 20px;
+    background-color: whitesmoke;
 }
-.company img{
-    width: 50px;
-    height: 50px;
-    margin-left: 50px;
-} */
+.card-container2 p{
+    width: 200px;
+    border: 1px solid #b3b0b0;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 30px; 
+}
 
-/*  AI for business leaders*/
+/*  AI caresoul  for business leaders*/
 .ai{
     height: 500px;
-    
 }
 .ai img{
     width: 100%;
-    height: 500px;
-
+    height: 400px;
 }
 .ai1{
     position: relative;
     height: 400px;
-
 }
 .ai1 h1{
     position: absolute;
-    bottom: 200%;
+    bottom: 700px;
     left: 10%;
 }
 .ai1 h6{
     position: absolute;
-    bottom: 185%;
+    bottom: 620px;
     left: 10%;
     width: 300px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .ai1 button{
     position: absolute;
     left: 10%;
-    bottom: 175%;
+    bottom: 580px;
     padding: 5px;
     border: 1px solid #061B3D;
     background-color: #061B3D;
@@ -369,72 +349,182 @@ main{
     border: 1px solid #157347;
     
 }
-/*review */
-.text5{
-    padding: 20px ;
+
+/* FOR COMPANIES LOGO AND PHOTO  */
+.text4{
+    padding: 20px 0px;
     text-align: center;
-    font-weight: bold;
-    font-size: 30px;
-    text-shadow: 0 0 2px black;
-    background-color: whitesmoke;
+    text-shadow: 0 1px 1px rgb(132, 131, 131);
+    background-color: #f8f9fa;
 }
-.card-container2{   /* for review*/
-    padding: 10px 100px;
+.images{
+    background-color: #f8f9fa;
+}
+.images img{  
+      width:100%;   
+}
+/* .company{
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(8,1fr);
     justify-content: center;
-    gap: 20px;
-    background-color: whitesmoke;
+    padding: 10px  100px;
+    background-color: white;
 }
-.card-container2 p{
-    width: 200px;
-    border: 2px solid black;
-    border-radius: 5px;
-    background-color: whitesmoke;
-    padding: 10px;
-    margin-left: 30px;
-    
-}
-footer{
-    background: linear-gradient(120deg, #061B3D, #0B3557);  /* The 120deg is the direction of the gradient.*/
-    color: white;
-    height: 60px;
-    padding: 10px;
-    bottom: 0;
-    width: auto;
-}
-footer h2{
-    font-weight: bold;
-    margin-left:auto;
-    display: inline;
-}
-footer h5{
-    display: inline;
-    font-size: 15px;
-    margin-left: auto;
-}
+.company img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+} */
+
+/*FOOTER */
 .foot{
-    display: inline;
-    margin-left: 400px;
+  background-color: #122037;
+  color: white;
+}
+.foot h4{
+  padding: 2% 3%;
+}
+.foot h5{
+    padding: 10px 10%;
+    font-weight: bold;
+    font-size: 18px;
+}
+.foot h6{
+    padding: 0px 10%;
+    font-size: 12px;
 }
 .foot a{
     color: white;
     text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-.eng{
-    color: white;
-    text-decoration: none;
-    margin-left: 620px;
+.foot a:hover{
+    text-decoration: underline;
+}
+.foot1{
+    background-color: #041228;
+    padding: 2% 1%;
+}
+.icon h4{
+    text-align: center;
+    padding: 0px;
+}
+.icon{
+    text-align: center;
+}
+.icon i{
+    border: 1px solid #ccc;
+    padding: 6px;
+    background-color:#061B3D;
+    border-radius: 30px;
+}
+.icon i:hover{
+    color: gold;
 }
 
 
 
-
+/* FOR POPUP */
 .card:hover,
 .card1:hover,
 .card-container2 p:hover {
     transform: translateY(-20px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+/*RESPONSIVE */
+@media (max-width: 992px) {
+  /* Navbar */
+  .menu-toggle {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    z-index: 999;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px;
+  }
+
+  /* Carousel text/image resizing */
+  .carousel-caption {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .carousel img {
+    height: 250px;
+    object-fit: cover;
+  }
+
+  /* Career Cards */
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Courses section */
+  .courses-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .course-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  /* Reviews */
+  .review-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .review-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Trusted Companies */
+  .trusted-logos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 
