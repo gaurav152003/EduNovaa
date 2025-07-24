@@ -308,7 +308,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 
 /*  AI caresoul  for business leaders*/
 .ai{
-    height: 500px;
+    height: 467px;
 }
 .ai img{
     width: 100%;
@@ -320,34 +320,36 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 }
 .ai1 h1{
     position: absolute;
-    bottom: 700px;
+    bottom: 670px;
     left: 10%;
+    color: white;
 }
 .ai1 h6{
     position: absolute;
-    bottom: 620px;
+    bottom: 600px;
     left: 10%;
-    width: 300px;
-    font-size: 18px;
+    width: 250px;
+    font-size: 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
 }
 .ai1 button{
     position: absolute;
     left: 10%;
-    bottom: 580px;
+    bottom: 560px;
     padding: 5px;
     border: 1px solid #061B3D;
-    background-color: #061B3D;
+    background-color: #eef0f2;
     width: 130px;
     border-radius: 5px;
 }
 .ai1 button a{
-    color: white;
+    color: rgb(12, 12, 12);
     text-decoration: none;
 }
 .ai1 button:hover{
-    background-color: #157347;
-    border: 1px solid #157347;
+    background-color:  rgb(179, 179, 247);
+    border: 1px solid  rgb(179, 179, 247);
     
 }
 
@@ -501,26 +503,26 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     width: 100%;
   }
 
-  .ai1 h1 {
-    font-size: 24px;
-    position: relative;
-    bottom: 0;
-    margin-bottom: 10px;
-  }
+  .ai1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+}
 
-  .ai1 h6 {
-    position: relative;
-    bottom: 0;
-    margin-bottom: 10px;
-    width: 100%;
-    font-size: 14px;
-  }
-
-  .ai1 button {
-    position: relative;
-    bottom: 0;
-    margin-bottom: 10px;
-  }
+.ai1 h1,
+.ai1 h6,
+.ai1 button {
+  position: static;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 300px;
+  color: white;
+}
 }
 
 @media (max-width: 480px) {
@@ -562,15 +564,29 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     font-size: 10px;
   }
 
-  .ai1 h1,
-  .ai1 h6,
-  .ai1 button {
-    position: relative;
-    bottom: 0;
-    margin-bottom: 10px;
-    width: 100%;
-    text-align: center;
-  }
+  .ai1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.ai1 h1,
+.ai1 h6,
+.ai1 button {
+  position: static;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+.images{
+    margin-top: 90px;
+}
 }
 
 /* Flex (short for Flexbox) is a CSS layout module designed to arrange elements in a single direction—row or column—even when their sizes are unknown or dynamic. */
