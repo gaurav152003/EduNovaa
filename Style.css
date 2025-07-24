@@ -551,6 +551,9 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   .text2 {
     font-size: 28px;
   }
+  .course{
+    margin-left: 5%;
+  }
 
   .text5 {
     font-size: 22px;
