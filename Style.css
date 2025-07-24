@@ -139,6 +139,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     gap: 20px;
     justify-content: center;
     background-color: white;
+    margin-left: 1%;
     
 }
 .cardcareer{
@@ -146,7 +147,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 6px;
     text-align: center;
 }
 .cardcareer img{
@@ -165,7 +166,8 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     padding: 5px;
 }
 .career{       
-    padding:5px 120px   
+    padding:5px 120px;
+    margin-left: 0.7%;
 }
 .career a{
     border: 1px solid rgb(54, 54, 235);
@@ -201,7 +203,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 }
 .skills{     /* for all the links in second section*/
      text-decoration: none;
-     font-size: 20px;
+     font-size: 22px;
      font-weight: bold;
      color: black;
      margin-left: 15px;
@@ -522,7 +524,14 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   margin-bottom: 10px;
   width: 100%;
   max-width: 300px;
-  color: white;
+  color: rgb(13, 13, 13);
+}
+.container3{
+    margin-top:82px;
+    align-items: center;
+}
+.card-container2 p{
+    margin-left: 22%;
 }
 }
 
@@ -540,6 +549,20 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   .cardcareer,
   .card1 {
     width: 100%;
+  }
+  .space{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding: 10px;
+    scroll-behavior: smooth;
+  }
+  .skills{
+    flex: 0 0 auto;
+    white-space: nowrap;
+    font-size: 14px;
   }
 
   .card1 h3,
@@ -593,7 +616,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     align-items: center;
 }
 .card-container2 p{
-    margin-left: 20%;
+    margin-left: 22%;
 }
 
 }
