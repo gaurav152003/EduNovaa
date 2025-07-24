@@ -280,6 +280,54 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     background-color: rgb(179, 179, 247);
 }
 
+/*  AI caresoul  for business leaders*/
+.ai{
+    height: 467px;
+}
+.ai img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px;
+}
+.ai1{
+    position: relative;
+    height: 400px;
+}
+.ai1 h1{
+    position: absolute;
+    bottom: 670px;
+    left: 38%;
+    color: rgb(8, 8, 8);
+}
+.ai1 h6{
+    position: absolute;
+    bottom: 630px;
+    left: 38%;
+    width: 350px;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(7, 7, 7);
+}
+.ai1 button{
+    position: absolute;
+    left: 38%;
+    bottom: 580px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #eef0f2;
+    width: 130px;
+    border-radius: 5px;
+}
+.ai1 button a{
+    color: rgb(12, 12, 12);
+    text-decoration: none;
+}
+.ai1 button:hover{
+    background-color:  rgb(179, 179, 247);
+    border: 1px solid  rgb(179, 179, 247);
+    
+}
+
 /* FOR REVIEWS */
 .text5{
     padding: 20px ;
@@ -304,53 +352,6 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     background-color: whitesmoke;
     padding: 10px;
     margin-left: 30px; 
-}
-
-/*  AI caresoul  for business leaders*/
-.ai{
-    height: 467px;
-}
-.ai img{
-    width: 100%;
-    height: 400px;
-}
-.ai1{
-    position: relative;
-    height: 400px;
-}
-.ai1 h1{
-    position: absolute;
-    bottom: 670px;
-    left: 10%;
-    color: white;
-}
-.ai1 h6{
-    position: absolute;
-    bottom: 600px;
-    left: 10%;
-    width: 250px;
-    font-size: 15px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-}
-.ai1 button{
-    position: absolute;
-    left: 10%;
-    bottom: 560px;
-    padding: 5px;
-    border: 1px solid #061B3D;
-    background-color: #eef0f2;
-    width: 130px;
-    border-radius: 5px;
-}
-.ai1 button a{
-    color: rgb(12, 12, 12);
-    text-decoration: none;
-}
-.ai1 button:hover{
-    background-color:  rgb(179, 179, 247);
-    border: 1px solid  rgb(179, 179, 247);
-    
 }
 
 /* FOR COMPANIES LOGO AND PHOTO  */
@@ -587,9 +588,14 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   font-size: 14px;
   color: black;
 }
-.images{
-    margin-top: 90px;
+.container3{
+    margin-top:65px;
+    align-items: center;
 }
+.card-container2 p{
+    margin-left: 20%;
+}
+
 }
 
 /* Flex (short for Flexbox) is a CSS layout module designed to arrange elements in a single direction—row or column—even when their sizes are unknown or dynamic. */
