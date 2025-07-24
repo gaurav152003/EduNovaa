@@ -21,7 +21,7 @@ header{
     justify-content: center;
     align-items: center;
     color: white;
-    box-shadow: 0 0 25px rgba(91, 92, 92, 0.4);   
+    box-shadow: 0 0px 8px 5px rgba(0, 0, 0, 0.1);
 }
 header h1{
     font-weight: bold;
@@ -84,28 +84,28 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
  /* for caresoul*/
 .body{  
     border: 1px solid white;
-    box-shadow: 0 0 10px black
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 
 /*For caresoul box*/
 .carousel-item{
     position: relative;
-    height: 500px;
+    height: 450px;
 }
 .carousel-item img{
     width: 100%;
-    height: 100%;   
+    height:400px;   
 }
 .overlay-box {
       position: absolute;
-      top: 26%;
+      top: 20%;
       left: 9%;
       background:white;
       color: #111;
       padding: 30px;
       border-radius: 12px;
       width: 400px;
-      box-shadow: 0 0 10px rgb(248, 243, 243)  
+      box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.1); 
 }
 .overlay-box a{
     background-color: #061B3D;
@@ -114,14 +114,13 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 
 /*FOR ACCELETORS */
 .acceletors{
-    padding: 30px 100px;    
+    padding: 30px 120px;    
 }
 .text{
     font-weight: bold;
     font-size: 40px;
     font-family: 'Times New Roman', Times, serif;
     text-align: center;
-    margin-top: 30px;
     text-shadow: 0 1px 1px rgb(132, 131, 131);
 }
 .text1{
@@ -142,34 +141,35 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     background-color: white;
     
 }
-.card{
+.cardcareer{
     padding: 15px 15px;
-    background-color: whitesmoke;
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.1);
     width: 400px;
     height: auto;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
 }
-.card img{
+.cardcareer img{
     width: 360px;
     height: auto;   
+    border-radius: 8px;
 }
-.card button{
+.cardcareer button{
     border: 1px solid #0B3557;
-    border-radius: 6px;
+    border-radius: 5px;
     box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
     margin-top: 8px;
     text-align: center;
-    background-color: #0B3557;
-    color: white;  
+    background-color: #1f3b57;
+    color:#ffffff;
+    padding: 5px;
 }
-.career{        /* for all other carrer acceletors and courses  */
-    padding:5px 100px   
+.career{       
+    padding:5px 120px   
 }
 .career a{
-    border: 2px solid rgb(54, 54, 235);
-    border-radius: 4px;
+    border: 1px solid rgb(54, 54, 235);
+    border-radius: 8px;
     /* height: 30px; */
     padding: 12px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -223,13 +223,13 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     width: auto;
     height: auto;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc;  if you wnat you can add */
     /* text-align: center; */
-    box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0px 8px 1px rgba(0, 0, 0, 0.1);
 }
 .card1 button{
     border: 0.5px solid #061B3D;
-    border-radius:5px;
+    border-radius:6px;
     padding: 4px;
     width: 100px;
     text-align: center;
@@ -250,6 +250,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 .card1 img{
     width: 100%;
     height: 250px;
+    border-radius: 10px;
 }
 .card1 h3{
     font-size: 17px;
@@ -268,10 +269,10 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     padding: 10px 100px;  /* for all other courses for web take 15px */
 }
 .course a{
-    border: 2px solid rgb(54, 54, 235);
+    border: 1px solid rgb(54, 54, 235);
     text-align: center;
     text-decoration: none;
-    border-radius: 4px;
+    border-radius: 8px;
     color: rgb(54, 54, 235);
     padding: 12px;
 }
@@ -425,107 +426,155 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 
 
 /* FOR POPUP */
-.card:hover,
+.cardcareer:hover,
 .card1:hover,
 .card-container2 p:hover {
     transform: translateY(-20px);
     transition: transform 0.3s ease;
 }
 
-/*RESPONSIVE */
-@media (max-width: 992px) {
-  /* Navbar */
-  .menu-toggle {
-    display: block;
-    font-size: 24px;
-    cursor: pointer;
-  }
 
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 10px;
-    background-color: white;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    z-index: 999;
-  }
 
-  .nav-links.active {
-    display: flex;
-  }
-
-  .nav-links li {
-    text-align: center;
-    padding: 10px;
-  }
-
-  /* Carousel text/image resizing */
-  .carousel-caption {
-    font-size: 14px;
-    padding: 10px;
-  }
-
-  .carousel img {
-    height: 250px;
-    object-fit: cover;
-  }
-
-  /* Career Cards */
-  .cards-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
+/*--- Responsive Styles ---*/
+@media (max-width: 1024px) {
+  .search {
     width: 90%;
-    margin-bottom: 20px;
   }
 
-  /* Courses section */
-  .courses-row {
-    flex-direction: column;
-    gap: 20px;
+  .card-container,
+  .card-container1,
+  .card-container2 {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20px;
   }
 
-  .course-card {
-    width: 90%;
-    margin: auto;
-  }
-
-  /* Reviews */
-  .review-section {
-    flex-direction: column;
+  .acceletors,
+  .career,
+  .coursee,
+  .space,
+  .course {
     padding: 20px;
   }
 
-  .review-card {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  /* Trusted Companies */
-  .trusted-logos {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-
-  /* Footer */
-  footer {
-    text-align: center;
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .footer-links {
-    flex-direction: column;
-    gap: 10px;
+  .overlay-box {
+    width: 300px;
+    padding: 20px;
+    left: 5%;
   }
 }
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 24px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .search {
+    width: 95%;
+    margin-top: 10px;
+  }
+
+  .carousel-item {
+    height: 300px;
+  }
+
+  .overlay-box {
+    width: 90%;
+    top: 10%;
+    left: 5%;
+    padding: 15px;
+  }
+
+  .card-container,
+  .card-container1,
+  .card-container2 {
+    grid-template-columns: 1fr;
+  }
+
+  .card img,
+  .card1 img {
+    width: 100%;
+  }
+
+  .ai1 h1 {
+    font-size: 24px;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+
+  .ai1 h6 {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .ai1 button {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .overlay-box {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .cardcareer,
+  .card1 {
+    width: 100%;
+  }
+
+  .card1 h3,
+  .card1 h4,
+  .card1 h2 {
+    font-size: 14px;
+  }
+
+  .text,
+  .text2 {
+    font-size: 28px;
+  }
+
+  .text5 {
+    font-size: 22px;
+  }
+
+  .foot h5 {
+    font-size: 14px;
+  }
+
+  .foot h6 {
+    font-size: 10px;
+  }
+
+  .ai1 h1,
+  .ai1 h6,
+  .ai1 button {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Flex (short for Flexbox) is a CSS layout module designed to arrange elements in a single direction—row or column—even when their sizes are unknown or dynamic. */
+
 
 
 
