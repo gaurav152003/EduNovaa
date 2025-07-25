@@ -185,13 +185,48 @@
             color: white;
             text-decoration: none;
         }
-        
-        
 
-        
-        
-    
+        /* RESPONSIVE*/
+        @media only screen and (max-width: 480px) {
+        header h1 {
+            font-size: 22px;
+        }
 
+        .card h1, .card h4, .card button,
+        .card1 h3, .card1 .para1, .card1 h4, .card1 .para2,
+        .card2 h3, .card2 .para3, .card2 h4, .card2 .para4,
+        .card3 h3, .card3 .para5, .card3 h4, .card3 .para6 {
+            position: static;
+            width: 90%;
+            margin: 10px auto;
+            text-align: center;
+        }
+
+        .card button {
+            display: block;
+            margin: 10px auto;
+        }
+
+        .card1 img,
+        .card2 img,
+        .card3 img {
+            height: auto;
+            width: 100%;
+        }
+
+        .card4 button {
+            margin: 10px auto;
+            display: block;
+        }
+
+        .card4 h1 {
+            font-size: 22px;
+        }
+
+        .card4 h3 {
+            font-size: 16px;
+        }
+        }
     </style>
 </head>
 <body>
@@ -204,7 +239,7 @@
         <button><a href="instructorpage.html">Get Started</a></button>
     </div>
 
-    <div>
+    <div class="img">
         <img src="images/teach1.png" alt="" width="100%">
         <img src="images/teach3.png" width="100%">
     </div><br><br>
