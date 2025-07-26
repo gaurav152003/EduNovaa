@@ -443,6 +443,21 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 
 /*--- Responsive Styles ---*/
 @media (max-width: 1024px) {
+     header {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  nav a {
+    margin-top: 5%;
+    font-size: 12px;
+  }
+  /* Hides "Explore" and "EduNova Business" dropdowns */
+  .dropdown:nth-of-type(1),  /* First dropdown: Explore */
+  .dropdown:nth-of-type(2) { /* Second dropdown: EduNova Business */
+    display: none !important;
+  
+}
   .search {
     width: 90%;
   }
@@ -469,7 +484,23 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 868px) {
+     header {
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  nav a {
+    margin-top: 5%;
+    font-size: 12px;
+  }
+  /* Hides "Explore" and "EduNova Business" dropdowns */
+  .dropdown:nth-of-type(1),  /* First dropdown: Explore */
+  .dropdown:nth-of-type(2) { /* Second dropdown: EduNova Business */
+    display: none !important;
+  
+}
+    
   header h1 {
     font-size: 24px;
   }
