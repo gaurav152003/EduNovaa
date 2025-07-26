@@ -38,7 +38,7 @@
             margin-top: 100px;
             border-radius: 10px;
             padding: 10px;
-            box-shadow: 0 0 8px black;
+            box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
             text-align: center;
             justify-content: center;
         }
@@ -69,7 +69,23 @@
             color: white;
         }
         /* RESPONSIVE*/
-        
+        @media(max-width:780px){
+            
+            .card{
+                display: flex;
+                position: relative;
+                width:380px;
+            }
+            .card button{
+                display: block;
+                margin: 10px auto;
+            }
+            .button{
+                display: block;
+                margin: 10px auto;
+            }
+        }
+
 
     </style>
 </head>
@@ -85,9 +101,9 @@
     </div><br><br>
     <h6>Based on your experience, we think these resources will be helpful.</h6><br><br>
     <img src="images/Untitled.png" width="100%"><br>
-    <h6>Have questions? Here are our most popular instructor resources.</h6><br><br>
+    <h6 class="h">Have questions? Here are our most popular instructor resources.</h6><br><br>
     <img src="images/Screenshot 2025-07-15 143603.png" width="100%"><br>
-    <h6>Are You Ready to Begin?</h6><br>
+    <h6 class="h">Are You Ready to Begin?</h6><br>
     <button class="button" > <a href="index.html">Create Your Course</a></button><br><hr>
 
 </body>
