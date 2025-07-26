@@ -16,9 +16,12 @@
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        body{
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
             background-color: whitesmoke;
         }
+
         header{
             background-color: #0B3557;
             color: white;
@@ -32,7 +35,7 @@
         }
         .container{
             background-color: white;
-            width: 1800px;
+            width: 100%;
             height: 1530px;
             border: 1px solid #ccc;
             box-shadow:  0 0 8px 1px rgba(0, 0, 0, 0.1);
@@ -78,13 +81,12 @@
             font-size: 12px;
             border-radius: 20px;
         }
-        .container1{
+        .container1 {
             display: grid;
-            grid-template-columns: repeat(3,1fr);
-            gap: 50px;
-            width: 1250px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* responsive */
+            gap: 30px;
+            width: 100%; /* fix: remove fixed width */
             padding: 20px;
-            
         }
         .card2{
             border: 1px solid #ccc;
@@ -131,34 +133,38 @@
         }
 
         /* responsive*/
-        @media(max-width:768px){
-            .container{
-                height: 100%;
-                width: 400px;
-            }
-            .card1 span{
-                font-size: 12px;
-                padding: 6px;
-                
-            }
-            .container1{
-                display:flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                padding: 0%;
-            }
-            .card2{
-                width: 350px;
-            }
-            .card2 img{
-                width: 320px;
-            }
-            .card4 button{
-                display: block;
-                margin: 10px auto;
-            }
-
+        @media(max-width:780px){
+        .container {
+        width: 400px;
+        height: auto;
+        padding: 10px;
         }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        .card1 span{
+            font-size: 11px;
+        }
+
+        .card2 {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .card2 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card4 button {
+            display: block;
+            margin: 10px auto;
+        }
+    }
     
     </style>
 </head>
