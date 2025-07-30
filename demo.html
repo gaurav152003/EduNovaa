@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>React Password Validation</title>
+  <style>
+    .error {
+      color: red;
+      margin: 10px 0;
+    }
+    input, button {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    button:disabled {
+      background-color: grey;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <!-- React + ReactDOM CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+  <!-- Babel for JSX -->
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Your React Code -->
+  <script type="text/babel">
+    function SignupForm() {
+      const [password, setPassword] = React.useState("");
+      const [error, setError] = React.useState("");
+      const [isValid, setIsValid] = React.useState(false);
+
+      const handlePasswordChange = (e) => {
+        const value = e.target.value;
+        setPassword(value);
+
+        const hasUppercase = /[A-Z]/.test(value);
+        const hasSpecialChar = /[!@#$%^&*(),.?":{}|<>]/.test(value);
+
+        if (!hasUppercase && !hasSpecialChar) {
+          setError("Must include uppercase and special character.");
+          setIsValid(false);
+        } else if (!hasUppercase) {
+          setError("Must include at least one uppercase letter.");
+          setIsValid(false);
+        } else if (!hasSpecialChar) {
+          setError("Must include at least one special character.");
+          setIsValid(false);
+        } else {
+          setError("");
+          setIsValid(true);
+        }
+      };
+
+      const handleSignup = () => {
+        alert("Signed up successfully!");
+      };
+
+      return (
+        <div style={{ maxWidth: "400px", margin: "0 auto", padding: "20px" }}>
+          <h3>Create Password</h3>
+          <input
+            type="password"
+            value={password}
+            onChange={handlePasswordChange}
+            placeholder="Enter password"
+          />
+          {error && <div className="error">{error}</div>}
+          <button disabled={!isValid} onClick={handleSignup}>
+            Sign Up
+          </button>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<SignupForm />);
+  </script>
+</body>
+</html>
