@@ -203,7 +203,7 @@
 </head>
 <body>
     <header>
-        <a href="homepage.html"><h1> EduNova</h1></a>
+        <a href="index.html"><h1> EduNova</h1></a>
     </header>
     
     <div class="image">
@@ -228,7 +228,7 @@
             <h2>Personal Plan<span><h6>For You</h6></span></h2>
             <p><i class="fas fa-user"></i> Individual</p><hr>
             <h6 style="font-weight: bold;">Starting at &#8377;70,000 per month <span><h6>Billed monthly or annually. Cancel anytime.</h6></span></h6>
-            <button><a href="Buynow.html">Start Subscription</a></button><br>
+            <button><a href="#" onclick="plans()">Start Subscription</a></button><br>
             <p><i class="fas fa-check-circle" style="color: green;"></i>Access to 26,000+ top courses</p>
              <p><i class="fas fa-check-circle" style="color: green;"></i>Certification prep</p>
               <p><i class="fas fa-check-circle" style="color: green;"></i>Goal-focused recommendations</p>
@@ -238,7 +238,7 @@
             <h2>Team Plan<span><h6>For Your Team</h6></span></h2>
             <p><i class="fas fa-users"></i>  <!-- Group of users --> 2 to 20 people</p><hr>
             <h6 style="font-weight: bold;">&#8377;1,70,000 a month per user <span><h6>Billed annually. Cancel anytime.</h6></span></h6>
-            <button><a href="Buynow.html">Start Subscription</a></button><br>
+            <button><a href="#" onclick="plans()">Start Subscription</a></button><br>
             <p><i class="fas fa-check-circle" style="color: green;"></i>Access to 13,000+ top courses</p>
              <p><i class="fas fa-check-circle" style="color: green;"></i>Certification prep</p>
               <p><i class="fas fa-check-circle" style="color: green;"></i>Goal-focused recommendations</p>
@@ -249,7 +249,7 @@
             <h2>Enterprise Plan<span><h6>For Your Whole Organization</h6></span></h2>
             <p><i class="fas fa-users"></i>  <!-- Group of users -->More than 20 people</p><hr>
             <h6 style="font-weight: bold;">Contact sales for pricing</h6><br>
-            <button><a href="Buynow.html">Start Subscription</a></button><br>
+            <button><a href="#" onclick="plans()">Start Subscription</a></button><br>
             <p><i class="fas fa-check-circle" style="color: green;"></i>Access to 30,000+ top courses</p>
              <p><i class="fas fa-check-circle" style="color: green;"></i>Certification prep</p>
               <p><i class="fas fa-check-circle" style="color: green;"></i>Goal-focused recommendations</p>
@@ -268,5 +268,11 @@
         <img src="images/Screenshot 2025-07-13 205055.png"  width="100%">
     </div>
 
+    <script>
+        function plans(){
+            alert("Please log in before purchasing a plan.")
+            window.location.href="signup.html"
+        }
+    </script>
 </body>
 </html>

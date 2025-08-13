@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Signup</title>
   <link rel="shortcut icon" href="images/9183170.png">
-  <script type="module" src="firebase.js" defer></script>
-  
   <style>
     * {
       padding: 0;
@@ -56,14 +54,17 @@
       width: 450px;
       max-width: 100%;
       background: rgba(255, 255, 255, 0.1); /* transparent glass look */
-      /* backdrop-filter: blur(15px);  this is to blur background content or get an glass effect */
+      backdrop-filter: blur(15px); /*  this is to blur background content or get an glass effect */
       color: black;
       padding: 20px;
       box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
       font-weight: bold;
-      margin-top: 70px;
+      margin-top: 30px;
       margin-left: 35%;
+    }
+    .box p{
+      font-size: 12px;
     }
 
     .label {
@@ -80,7 +81,15 @@
       padding: 6px;
       margin-bottom: 20px;
       background: rgba(255, 255, 255, 0.1); /* transparent glass look */
-      backdrop-filter: blur(3px);  /* this is to blur background content or get an glass effect */
+      backdrop-filter: blur(15px);  /* this is to blur background content or get an glass effect */
+    }
+    .inputphoto{
+      padding: 3px;
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 30px; 
+      border-radius: 5px;
+      background: rgba(255, 255, 255, 0.1); /* transparent glass look */
     }
 
     .signup {
@@ -132,7 +141,7 @@
 
   <div class="container">
     <div class="card">
-      <form action="index.html" class="box" id="signup">
+      <form  class="box" id="signup">
         <label for="name" class="label">Name :</label>
         <input type="text" placeholder="Enter Your Name" required class="input" id="name" />
 
@@ -140,14 +149,18 @@
         <input type="email" placeholder="Enter Your Email Address" required class="input"  id="email"/>
 
         <label for="password" class="label">Password:</label>
-        <input type="password" id="password" minlength="8" placeholder="Enter Password" required class="input" />
+        <input type="password" id="password"  placeholder="Enter Password" required class="input" />
+        <p id="emessage" style="color: red;"></p>
 
-        <label for="confirm-password" class="label">Confirm Password:</label>
-        <input type="password" id="confirm-password" minlength="8" placeholder="Confirm Password" required class="input" />
+        <label for="cpassword" class="label">Confirm Password:</label>
+        <input type="password" id="cpassword"  placeholder="Confirm Password" required class="input" />
+        <p id="errmsg" style="color: red;"></p>
 
-        <p id="errormsg"></p>
+        <label for="picture" class="label">Upload Your Photo:</label>
+        <input type="file" required id="photo" class="inputphoto">
 
-        <button type="submit" class="signup" id="submit">SIGN UP</button>
+        <button type="submit" class="signup" >SIGN UP</button>
+        <p style="text-align: center; margin-top: 10px;">Already have an account? <span><a href="login.html"  style="color: #0B3557;" >Log in</a></span></p>
       </form>
     </div>
     <div class="card">
@@ -156,19 +169,39 @@
   </div>
 
   <script>
-    const password = document.getElementById("password");
-    const c_password = document.getElementById("confirm-password");
-    const signup = document.getElementById("signup");
-    const errormsg = document.getElementById("errormsg");
-
-    signup.addEventListener("submit", function (e) {    //This is the callback function  e stand for event object
-      if (password.value !== c_password.value) {
-        e.preventDefault(); // Stop form submission
-        errormsg.textContent = "Password and Confirm Password must be same";
-      } else {
-        errormsg.textContent = ""; // Clear error message
+    document.getElementById("signup").addEventListener("submit",function(event){
+      event.preventDefault()
+      const name=document.getElementById("name").value;
+      const email=document.getElementById("email").value;
+      const password=document.getElementById("password").value;
+      const cpassword=document.getElementById("cpassword").value;
+      const photo=document.getElementById("photo").files[0];
+     
+      const passwordpattern=/^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/  // RegExp object 
+      if(!passwordpattern.test(password) ){
+        document.getElementById("emessage").innerHTML="Password must be at least 8 characters long, with uppercase, lowercase, number, and special character."
       }
-    });
-  </script>
+      else if(password !== cpassword){
+        document.getElementById("errmsg").innerHTML="Password and Confirm Password must be same!!"
+      }
+      else{
+        localStorage.setItem("uname",name)
+        localStorage.setItem("uemail",email)
+        localStorage.setItem("upassword",password)
+        const reader = new FileReader()
+        reader.onloadend=function(){
+          localStorage.setItem("uphoto",reader.result)
+        }
+        if(photo){
+          reader.readAsDataURL(photo)
+        }
+
+        alert("Registration complete!!!")
+        window.location.href="login.html"
+      }
+    })
+  
+  
+</script>
 </body>
 </html>

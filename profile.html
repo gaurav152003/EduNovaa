@@ -116,24 +116,30 @@
             color: white;
             text-decoration: none;
         }
+        .card4{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 10px;
+            justify-content: center;  /* Centers horizontally */
+        }
         .card4 button{
             background-color: #0B3557;
             border: #0B3557;
-            padding: 7px;
+            padding: 5px;
             border-radius: 8px;
-            margin-left: 48%;
-
         }
         .card4 a{
             text-decoration: none;
             color: white;
+            font-size: 13px;
         }
         .card4 button:hover{
             background-color: #157347;
         }
 
         /* responsive*/
-        @media(max-width:1000px){
+     @media(max-width:1000px){
         .container {
         width: auto;
         height: auto;
@@ -162,19 +168,50 @@
 
         .card4 button {
             display: block;
-            margin: 10px auto;
+        
         }
     }
-    
+     @media(max-width:500px){
+        .container {
+        width: 400px;
+        height: auto;
+        padding: 10px;
+        }
+
+        .container1 {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 0;
+        }
+        .card1 span{
+            font-size: 11px;
+        }
+
+        .card2 {
+            width: 100%;
+            padding: 10px;
+        }
+
+        .card2 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card4 button {
+            display: block;
+            
+        }
+    }
     </style>
 </head>
 <body>
-     <header> <a href="index.html"><h1> EduNova</h1></a></header>
+     <header> <a href="homepage.html"><h1> EduNova</h1></a></header>
 
      <div class="container">
         <div class="card">
-        <img src="images/young-man-black-shirt_1308-173618.avif" alt="">
-        <h1>Gaurav Yadav</h1><span><h6>gauravyadav@gmail.com</h6></span>
+        <img id="image">
+        <h1 id="name"></h1><span><h6 id="email"></h6></span>
         <button><a href="editprofile.html"><i class="fa fa-edit"></i> Edit Profile</a></button><hr>
         </div>
 
@@ -241,14 +278,21 @@
             </ul>
 
             <div class="card4">
-                <button><a href="index.html">Back To Home</a></button>
+                <button> <i class="fas fa-home" style="color: white; font-size: 13px;"></i> <a href="homepage.html">Back To Home</a></button>
+                <button> <i class="fas fa-sign-out-alt" style="color: white; font-size: 13px;"></i> <a href="index.html">Logout</a></button>
             </div>
-
-        </div>
 
 
 
     </div>
+    <script>
+        const storedname=localStorage.getItem("uname")
+        const storedemail=localStorage.getItem("uemail")
+        const storedimage=localStorage.getItem("uphoto")
+        document.getElementById("name").innerHTML=storedname
+        document.getElementById("email").innerHTML=storedemail
+        document.getElementById('image').src=localStorage.getItem("uphoto")
+    </script>
 
 </body>
 </html>

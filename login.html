@@ -63,6 +63,7 @@
       width: 400px;
       max-width: 100%;
       background: rgba(255, 255, 255, 0.1); /* transparent glass look */
+      backdrop-filter: blur(15px);
       color: black;
       border-radius: 12px;
       box-shadow:0 0 8px 1px rgba(0, 0, 0, 0.1);
@@ -71,6 +72,9 @@
       margin-top: 100px;
       margin-left: 50%;
       margin-top: 20%;
+    }
+    .box p{
+      font-size: 12px;
     }
     .label{
       display: block;
@@ -128,17 +132,38 @@
   </header>
   <div class="container">
     <div class="card">
-    <form action="index.html" class="box">
+    <form  class="box" id="login" >
       <label for="email" class="label" >Email Address:</label>
-      <input type="email" class="input" placeholder="Enter Your Email Address" required />
+      <input type="email" class="input" placeholder="Enter Your Email Address" required id="email" />
       <label for="password" class="label">Password:</label>
-      <input type="password" class="input" placeholder="Enter Password" required />
+      <input type="password" class="input" placeholder="Enter Password" required id="password" />
+      <p id="errmsg" style="color: red;"></p>
       <button type="submit" class="signin">LOGIN</button>
+      <p style="text-align: center; margin-top: 10px;">Don't have an account? <span><a href="signup.html" style="color: #0B3557;">Sign up</a></span></p>
     </form>
     </div>
     <div class="card">
       <img src="images/signin.png" alt="Login Illustration" />
     </div>
   </div>
+
+  <script>
+    document.getElementById("login").addEventListener("submit",function(event){
+      event.preventDefault()
+      const email=document.getElementById("email").value;
+      const password=document.getElementById("password").value;
+      const storedemail=localStorage.getItem("uemail")
+      const storedpassword=localStorage.getItem("upassword")
+      console.log(storedemail,storedpassword)
+      if(email===storedemail && password===storedpassword){
+        alert("Login Successfull!!")
+        window.location.href="homepage.html"
+      }
+      else{
+        document.getElementById("errmsg").innerHTML="Invalid email or password!"
+      }
+
+    })
+  </script>
 </body>
 </html>

@@ -230,13 +230,13 @@
     </style>
 </head>
 <body>
-    <header><h1><a href="homepage.html">EduNova</a></h1></header>
+    <header><h1><a href="index.html">EduNova</a></h1></header>
 
     <div class="card">
         <img src="images/teach.webp" alt="">
         <h1>Come Teach With US</h1>
         <h4>Become an instructor and change lives — including your own</h4>
-        <button><a href="instructorpage.html">Get Started</a></button>
+        <button><a href="#" onclick="teach()">Get Started</a></button>
     </div>
 
     <div class="img">
@@ -272,10 +272,15 @@
     <div class="card4">
         <h1>Become An Instructor Today</h1><br>
         <h3>Join one of the world's largest online learning marketplace</h3><br><br>
-        <button><a href="instructorpage.html">Get Started</a></button>
+        <button><a href="#" onclick="teach()">Get Started</a></button>
 
     </div><br><br>
-
+<script>
+    function teach(){
+        alert("Please Login first!!")
+        window.location.href="signup.html"
+    }
+</script>
 
     
 </body>
