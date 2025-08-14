@@ -78,8 +78,8 @@
         .card1 span{
             background-color: whitesmoke;
             padding: 10px;
-            font-size: 12px;
-            border-radius: 20px;
+            font-size: 14px;
+            border-radius: 5px;
         }
         .container1 {
             display: grid;
@@ -92,7 +92,7 @@
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 15px;
-            box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.1);
         }
         .card2 img{
             width: 350px;
@@ -210,22 +210,16 @@
 
      <div class="container">
         <div class="card">
-        <img id="image">
+        <img id="image" >
         <h1 id="name"></h1><span><h6 id="email"></h6></span>
         <button><a href="editprofile.html"><i class="fa fa-edit"></i> Edit Profile</a></button><hr>
         </div>
 
-        <h3>About <span><h6>I’m a passionate web developer and aspiring cloud engineer. I enjoy building modern web apps, and I’m currently exploring ethical hacking and data science.</h6></span></h3><br>
+        <h3>About <span><h6 id="bio"></h6></span></h3><br>
 
         <div class="card1">
         <h3>Skills <br>
-           <span> HTML</span>
-           <span>CSS</span>
-           <span>JavaScript</span>
-           <span>Bootstrap</span>
-           <span>React</span>
-           <span>MongoDB</span>
-           <span>Node.js</span>
+           <span id="skills"></span>
         </span></h3>
         </div><br><hr>
 
@@ -279,7 +273,7 @@
 
             <div class="card4">
                 <button> <i class="fas fa-home" style="color: white; font-size: 13px;"></i> <a href="homepage.html">Back To Home</a></button>
-                <button> <i class="fas fa-sign-out-alt" style="color: white; font-size: 13px;"></i> <a href="index.html">Logout</a></button>
+                <button> <i class="fas fa-sign-out-alt" style="color: white; font-size: 13px;"></i> <a href="#" onclick="logout()">Logout</a></button>
             </div>
 
 
@@ -288,10 +282,26 @@
     <script>
         const storedname=localStorage.getItem("uname")
         const storedemail=localStorage.getItem("uemail")
-        const storedimage=localStorage.getItem("uphoto")
         document.getElementById("name").innerHTML=storedname
         document.getElementById("email").innerHTML=storedemail
-        document.getElementById('image').src=localStorage.getItem("uphoto")
+        document.getElementById('image').src=localStorage.getItem("updatedphoto") || localStorage.getItem("uphoto")
+
+        const updatedBio=localStorage.getItem("updatedBio")
+        const defaultbio="Add a short bio to let others know you better..."
+        document.getElementById("bio").innerHTML=updatedBio || defaultbio
+        const skills=localStorage.getItem("skills")
+        const defaultskill="Enter your skills"
+        document.getElementById("skills").innerHTML=skills || defaultskill
+
+        function logout(){
+            localStorage.removeItem("updatedphoto")
+            localStorage.removeItem("updatedBio")
+            localStorage.removeItem("skills")
+            alert("Logout successful!")
+            window.location.href="index.html"
+        }
+
+       
     </script>
 
 </body>

@@ -69,11 +69,17 @@
         <img src="images/logo_EduNova_basic.png" alt=""><br><br>
         <h1>Certificate of Completion</h1>
          <h6> This is to certify that</h6><br>
-         <h2>Gaurav Gorakhnath Yadav</h2>
+         <h2 id="name"></h2>
          <h6>has successfully completed the</h6><br>
          <h4>Ethical Hacking Fundamentals</h4>
-         <h6>Issued by EduNova | July 2025</h6><br><br>
+         <h6 id="date"></h6><br><br>
          <h5><i>— EduNova Certification Authority</i></h5>
     </div>
+    <script>
+        const name=localStorage.getItem("uname")
+        document.getElementById("name").innerHTML=name
+        const date=new Date()
+        document.getElementById("date").innerHTML="Issued by EduNova | " + date.toLocaleDateString();   //date method
+    </script>
 </body>
 </html>

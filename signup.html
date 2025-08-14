@@ -188,12 +188,13 @@
         localStorage.setItem("uname",name)
         localStorage.setItem("uemail",email)
         localStorage.setItem("upassword",password)
-        const reader = new FileReader()
-        reader.onloadend=function(){
-          localStorage.setItem("uphoto",reader.result)
+        //Base64 is a way of turning any file (like an image, text, or video) into a long text string made of letters, numbers, +, /, and =.
+        const reader = new FileReader()                 // object (fileReader)is a built in js api used to read files like image and convert them into different formant in our case base64
+        reader.onloadend=function(){       //anononyums function   //.onloadend is an event that runs after the file reading process finishes 
+          localStorage.setItem("uphoto",reader.result)    //store image as Base64 string
         }
         if(photo){
-          reader.readAsDataURL(photo)
+          reader.readAsDataURL(photo)           //.readAsDataURL(photo) tells FileReader to read the file and convert it into a Base64 Data URL format
         }
 
         alert("Registration complete!!!")

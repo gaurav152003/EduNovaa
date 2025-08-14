@@ -31,7 +31,7 @@
         .border{
             background-color: white;
             width: 500px;
-            height: 600px;
+            height: auto;
             margin: auto;
             margin-top: 20px;
             padding: 20px;
@@ -53,7 +53,7 @@
             padding: 5px;
             outline: none;
         }
-        .button{
+        .button1{
             width:460px ;
             height: 30px;
             border-radius: 20px;
@@ -94,7 +94,7 @@
         .input1{
             width: 360px;
         }
-        .button{
+        .button1{
             width: 360px;
         }
     }
@@ -109,22 +109,39 @@
     <body>
         <div class="border">
         <h3>Edit Profile</h3><br>
-        <form action="profile.html">
-            <label class="text" for="name">Name:</label><br><br>
-            <input class="input" type="text" required placeholder="Enter Your Name"><br><br>
-            <label class="text" for="email">Emial Address:</label><br><br>
-            <input class="input" type="email" required placeholder="Enter Your Email"><br><br>
-            <label class="text" for="email">Phone Number:</label><br><br>
-            <input class="input" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="10" required placeholder="Enter Your Phone Number"><br><br>
+        <form id="editprofile">
             <label class="text" for="subject"> Photo:</label><br><br>
-            <input class="input" type="file" required placeholder="What is Your Query About?" name="" id=""><br><br>
+            <input id="photo" class="input" type="file"   name="" id=""><br><br>
             <label class="text" for="message">Bio:</label><br><br>
-            <textarea class="input1" placeholder="Enter Your Message Here....." name="" id="" rows="5" cols="65" required></textarea><br><br>
-            <button class="button" type="submit">Save</button>
+            <textarea id="bio" class="input1" placeholder="Add a short bio to let others know you better..." name="" id="" rows="5" cols="65" ></textarea><br><br>
+            <label  class="text" for="skills" >Skills :</label><br><br>
+            <input type="text" name="" id="skills" class="input"><br><br>
+            <p id="errmsg" style="color: red;"></p>
+            <button class="button1" type="submit" >Save</button>
         </form>
     </div>
     </body>
     
+    <script>
+        document.getElementById("editprofile").addEventListener("submit",function(event){
+            event.preventDefault()
+
+            const updatedphoto=document.getElementById("photo").files[0]    //files[0] simply means "the first file the user selected in the file input."
+            const updatedBio=document.getElementById("bio").value;
+            const skills=document.getElementById("skills").value;
+            if(skills) localStorage.setItem("skills",skills)
+            if(updatedBio) localStorage.setItem("updatedBio",updatedBio)   // we have taken if so that if bio section empty then it wont overrite in localstorage
+            const reader= new FileReader()
+            reader.onloadend=function(){
+                localStorage.setItem("updatedphoto",reader.result)
+            }
+            if(updatedphoto){
+                reader.readAsDataURL(updatedphoto)
+            }
+            alert("Profile Updated Successfully! ")
+            window.location.href="profile.html"
+        })
+    </script>
 
 </body>
 </html>

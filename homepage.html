@@ -58,7 +58,7 @@
         </ul>
         </div>
         <a href="Shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-        <a href="profile.html"><i class="fa fa-user"></i> <span id="message" style="font-size: 15px;"></span></a>
+        <a href="profile.html"><i class="fa fa-user"></i> <span id="username" style="font-size: 15px;"></span></a>
         </nav>
       </header> <br><br>
 
@@ -492,7 +492,9 @@
     <script>
       
       const storedname=localStorage.getItem("uname")
-      document.getElementById("message").innerHTML=storedname
+      document.getElementById("username").innerHTML=storedname
+      // const updatedname=localStorage.getItem("updatedname")
+      // document.getElementById("username").innerHTML=updatedname
     </script>
 </body>
 </html>
