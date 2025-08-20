@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Login</title>
   <link rel="shortcut icon" href="images/9183170.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
   <style>
     * {
       padding: 0;
@@ -103,8 +104,48 @@
       box-shadow: 0 0 5px black;
       cursor: pointer;
     }
+    footer{
+      background-color: #0B3557;
+      color: white;
+      margin-top: 110px;
+      height: auto;
+      padding: 8px;
+      text-align: center;
+      font-size: 18px;
+    }
+    footer p{
+      font-size: 12px;
+    }
+    footer a{
+      font-size: 12px;
+      border: 1px solid#ccc;
+      border-radius: 30px;
+      padding: 5px;
+    }
+    footer i{
+      font-size: 12px;
+    }
     /* RESPONSIVE MOBILE*/
     @media(max-width : 1000px){
+      header{
+        text-align: center;
+        width: 100%;
+      }
+      .container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+      }
+      .card{
+        width: 400px;
+        margin-right: 44%;
+      }
+      .card img{
+        width: 400px;
+        margin-left: 40%;
+      }
+    }
+     @media(max-width : 700px){
       header{
         text-align: center;
         width: 100%;
@@ -146,6 +187,18 @@
       <img src="images/signin.png" alt="Login Illustration" />
     </div>
   </div>
+
+  <footer>
+     <div class="icon">
+          <h4 style="display: inline;">EduNova</h4>
+          <p style="display: inline;">© 2025 EduNova Inc. All rights reserved.</p>
+          <a style="color: white;" href="#"><i class="bi bi-facebook"></i></a>
+          <a style="color: white;" href="#"><i class="bi bi-instagram"></i></a>
+          <a style="color: white;" href="#"><i class="bi bi-linkedin"></i></a>
+          <a style="color: white;" href="#"><i class="bi bi-twitter"></i></a>
+          <a style="color: white;" href="#"><i class="bi bi-youtube"></i></a>
+        </div>
+  </footer>
 
   <script>
     document.getElementById("login").addEventListener("submit",function(event){
