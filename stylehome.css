@@ -703,6 +703,9 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   .card1 {
     width: 100%;
   }
+  .career{
+    margin-left: 6%;
+  }
   .space{
     display: flex;
     flex-direction: row;
@@ -776,6 +779,15 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     bottom: 70px ;  
     right: 100px ;   
   } */
+   @media (max-width: 480px) {
+  #tidio-chat-iframe {
+    bottom: 10px !important;
+    right: 10px !important;
+    width: 90% !important;   /* full width look */
+    max-width: 360px !important;
+    height: 60% !important;  /* not covering whole screen */
+  }
+}
 }
 
 

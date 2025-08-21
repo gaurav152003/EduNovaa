@@ -710,6 +710,9 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
   .card1 {
     width: 100%;
   }
+  .career{
+    margin-left: 6%;
+  }
   .space{
     display: flex;
     flex-direction: row;
