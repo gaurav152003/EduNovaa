@@ -649,7 +649,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     align-items: center;
 }
 .card-container2 p{
-    margin-left: 22%;
+    margin-left: auto;
 }
 }
 
@@ -769,13 +769,13 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     align-items: center;
 }
 .card-container2 p{
-    margin-left: 22%;
+    margin-left: auto;
 }
 
-#tidio-chat-iframe {
-    bottom: 80px !important;  /* move up */
-    right: 10px !important;   /* adjust padding */
-  }
+/* #tidio-chat-iframe {
+    bottom: 70px ;  
+    right: 100px ;   
+  } */
 }
 
 

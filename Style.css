@@ -656,7 +656,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     align-items: center;
 }
 .card-container2 p{
-    margin-left: 22%;
+    margin-left: auto;
 }
 }
 
@@ -776,7 +776,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     align-items: center;
 }
 .card-container2 p{
-    margin-left: 22%;
+    margin-left: auto;
 }
 }
 
