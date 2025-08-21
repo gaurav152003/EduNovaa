@@ -771,6 +771,11 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 .card-container2 p{
     margin-left: 22%;
 }
+
+#tidio-chat-iframe {
+    bottom: 80px !important;  /* move up */
+    right: 10px !important;   /* adjust padding */
+  }
 }
 
 
