@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;  /* control how total size of an element is calculate  */
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 
 html {
@@ -219,7 +219,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 }
 .skills{     /* for all the links in second section*/
      text-decoration: none;
-     font-size: 22px;
+     font-size: 20px;
      font-weight: bold;
      color: black;
      margin-left: 15px;
