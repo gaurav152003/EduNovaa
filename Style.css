@@ -167,7 +167,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     text-align: center;
 }
 .cardcareer img{
-    width: 360px;
+    width: 100%;
     height: auto;   
     border-radius: 8px;
 }
@@ -364,7 +364,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
     background-color: whitesmoke;
 }
 .card-container2 p{
-    width: 200px;
+    width: 100%;
     border: 1px solid #b3b0b0;
     border-radius: 5px;
     background-color: whitesmoke;

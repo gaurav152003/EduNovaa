@@ -204,6 +204,7 @@
 
         <label for="cpassword" class="label">Confirm Password:</label>
         <input type="password" id="cpassword"  placeholder="Confirm Password" required class="input" />
+        <input type="checkbox"  id="showpassword">Show Password <br><br>
         <p id="errmsg" style="color: red;"></p>
 
         <label for="picture" class="label">Upload Your Photo:</label>
@@ -231,6 +232,20 @@
   </footer>
 
   <script>
+    document.getElementById("showpassword").addEventListener("change",()=>{
+      const pass=document.getElementById("password")
+      const cpass=document.getElementById("cpassword")
+      if(showpassword.checked){
+        pass.type="text"
+        cpass.type="text"
+      }
+      else{
+       pass.type="password"
+       cpass.type="password"
+      }
+    })
+
+
     document.getElementById("signup").addEventListener("submit",function(event){
       event.preventDefault()                 //top default browser actions
       const name=document.getElementById("name").value;

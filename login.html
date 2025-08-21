@@ -178,6 +178,7 @@
       <input type="email" class="input" placeholder="Enter Your Email Address" required id="email" />
       <label for="password" class="label">Password:</label>
       <input type="password" class="input" placeholder="Enter Password" required id="password" />
+      <input type="checkbox" name="" id="showpassword">Show Password
       <p id="errmsg" style="color: red;"></p>
       <button type="submit" class="signin">LOGIN</button>
       <p style="text-align: center; margin-top: 10px;">Don't have an account? <span><a href="signup.html" style="color: #0B3557;">Sign up</a></span></p>
@@ -201,6 +202,19 @@
   </footer>
 
   <script>
+    document.getElementById("showpassword").addEventListener("change",()=>{
+      const pass=document.getElementById("password")
+      if(showpassword.checked){
+        pass.type="text"
+      }
+      else{
+        pass.type="password"
+      }
+    })
+
+
+
+
     document.getElementById("login").addEventListener("submit",function(event){
       event.preventDefault()
       const email=document.getElementById("email").value;
