@@ -269,23 +269,8 @@
             </h6><hr>
             
             <h3>Enrolled Courses</h3>
-            <div class="container1">
-                <div class="card2">
-                    <a href="https://youtu.be/nu_pCVPKzTk?si=DXBl2EnmThJRuGE4"><img src="images/web development.jpeg" alt=""></a>
-                    <h5>The Complete Fullstack Web Development Bootcamp</h5>
-                     <h6>75% Completed</h6>
-                </div>
-                <div class="card2" >
-                    <a href="https://youtu.be/LHBE6Q9XlzI?si=u_5kssUoDittYIWm"><img src="images/1714026391309.png" alt=""></a>
-                    <h5>Python for Data Science and Machine Learning Bootcamp</h5>
-                    <h6>50% Completed</h6>
-
-                </div>
-                <div class="card2" >
-                    <a href="https://youtu.be/NhDYbskXRgc?si=2Y1BcFK9Gm8GP2Ed"><img src="images/1676326336050.jpeg" alt=""></a>
-                    <h5>AWS Cloud Practitioner Certification</h5>
-                     <h6>Completed</h6>
-                </div>
+            <div id="purchasedList">
+               
             </div><hr>
 
             <h3>Certificates</h3>
@@ -335,6 +320,7 @@
             localStorage.removeItem("updatedBio")
             localStorage.removeItem("skills")
             localStorage.removeItem("cart")
+            localStorage.removeItem("purchasedCourses")
             // localStorage.removeItem("uname");
             // localStorage.removeItem("uemail");
             // document.addEventListener("tidioChat-ready", function () {
@@ -347,7 +333,25 @@
             window.location.href="index.html"
         }
 
-            
+        
+        const purchased = JSON.parse(localStorage.getItem("purchasedCourses")) || [];
+        const container = document.getElementById("purchasedList");
+
+        if (purchased.length === 0) {
+        container.innerHTML = "<p>No courses purchased yet.</p>";
+        } else {
+        purchased.forEach(item => {
+            container.innerHTML += `
+            <div>
+                <img src="${item.image}" width="200">
+                <h4>${item.title}</h4>
+                <p>Rating: ⭐${item.rating}</p>
+                
+            </div>
+            <hr>
+            `;
+        });
+        }
             
     </script>
 

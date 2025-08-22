@@ -119,10 +119,6 @@
       .proceed:hover{
         background-color: #157347;
       }
-
-
-
-
       
       /* RESPONSIVE*/
       @media(max-width:450px){
@@ -140,10 +136,10 @@
           width: 300px;
         }
         .margin{
-          margin-left: 35%;
+          margin-left: 34%;
         }
         .margin1{
-          margin-left: 43%;
+          margin-left: 42%;
         }
       }
 
@@ -162,7 +158,7 @@
      
   <!--form -->
   <section class="container">
-  <form action="">
+  <form  id="payment">
   <h2>Checkout</h2>
   <h4>Billing Address</h4>
   
@@ -190,7 +186,7 @@
               <img src="https://cdn.simpleicons.org/mastercard/EB001B" height="20" alt="Mastercard">
               <img src="https://cdn.simpleicons.org/paypal/003087" height="20" alt="PayPal">
               </div><br>
-              <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="12"  placeholder="1234 5678 9012 3456" class="input2" ><br>
+              <input id="cardinput" type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="12"  placeholder="1234 5678 9012 3456" class="input2" ><br>
               <label for="date">Expirt Date</label>
               <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="4"  placeholder="MM/YY" class="input2"><br>
               <label for="cvv">CVC/CVV</label>
@@ -205,15 +201,16 @@
    <div class="collapse" id="collapseExample1">
      <div class="card card-body">
        <label for="id">UPI ID</label><br>
-          <input type="text"   class="input2" placeholder="Enter your UPI ID">
+          <input type="text" id="upiinput"  class="input2" placeholder="Enter your UPI ID" >
           <h6>Enter your UPI ID / VPA and click "Proceed" to initiate the transaction.</h6>
           
       </div>
    </div>
+   <p id="errmsg" style="color: red;"></p>
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
   </div> <br>
-   <button class="proceed"><i class="fas fa-lock"></i> Proceed</button>
+   <button class="proceed" type="submit"><i class="fas fa-lock" ></i> Proceed</button>
 
 
   <div>
@@ -221,6 +218,34 @@
  </div>
  </section>
  </form>
+
+<script>
+ document.getElementById("payment").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const card = document.getElementById("cardinput").value.trim();
+  const upi = document.getElementById("upiinput").value.trim();
+
+  if (!card && !upi) {
+    document.getElementById("errmsg").innerHTML = "⚠️ Please select a payment method";
+  } else {
+    // ✅ Move items from cart → purchasedCourses
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let purchased = JSON.parse(localStorage.getItem("purchasedCourses")) || [];
+    purchased.push(...cart); // add cart items
+    localStorage.setItem("purchasedCourses", JSON.stringify(purchased));
+
+    // ✅ Clear cart
+    localStorage.removeItem("cart");
+
+    alert("✅ Payment Successful! Thanks For Purchase");
+    window.location.href = "profile.html"; // go to profile
+  }
+});
+
+</script>
+
+
  </body>
  </html>
 
