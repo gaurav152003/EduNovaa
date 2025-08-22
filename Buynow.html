@@ -32,7 +32,7 @@
         border-radius: 10px;
         margin: auto;
         margin-top: 60px;
-        width: 650px;
+        width: auto;
         padding: 30px;
         box-shadow:  0 0px 8px 5px rgba(0, 0, 0, 0.1);
       }
@@ -108,10 +108,26 @@
         text-decoration: none;
         color: black;
       }
+      .proceed{
+        background-color: #0B3557;
+        width: 100%;
+        height: 30px;
+        border: #ccc;
+        border-radius: 5px;
+        color: white;
+      }
+      .proceed:hover{
+        background-color: #157347;
+      }
+
+
+
+
+      
       /* RESPONSIVE*/
-      @media(max-width:768px){
+      @media(max-width:450px){
         .container{
-          width: 400px;
+          width: auto;
           margin-bottom: 20px;
         }
         .input{
@@ -124,10 +140,10 @@
           width: 300px;
         }
         .margin{
-          margin-left: 36%;
+          margin-left: 25%;
         }
         .margin1{
-          margin-left: 45%;
+          margin-left: 40%;
         }
       }
 
@@ -181,7 +197,6 @@
               <input type="text" oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="3"  placeholder="CVC" class="input2"><br>
               <label for="name">Name on Card</label>
               <input type="text"  placeholder="Name on Card" class="input2"><br>
-              <button type="button" data-bs-toggle="modal" data-bs-target="#paymentSuccessModal"><i class="fas fa-lock" style="color: rgb(246, 244, 244);"></i> Proceed</button>
       </div>
    </div>
    
@@ -192,35 +207,16 @@
        <label for="id">UPI ID</label><br>
           <input type="text"   class="input2" placeholder="Enter your UPI ID">
           <h6>Enter your UPI ID / VPA and click "Proceed" to initiate the transaction.</h6>
-          <button type="button" data-bs-toggle="modal" data-bs-target="#paymentSuccessModal"><i class="fas fa-lock" style="color: rgb(252, 250, 250);"></i> Proceed</button>
+          
       </div>
    </div>
     
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </div>
+  </div> <br>
+   <button class="proceed"><i class="fas fa-lock"></i> Proceed</button>
 
 
   <div>
-    <!-- Success Modal -->
-    <div class="modal fade" id="paymentSuccessModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content text-center">
-          <div class="modal-header bg-success text-white">
-            <h5 class="modal-title w-100" id="successModalLabel">Payment Successful!</h5>
-            </div>
-            <div class="modal-body">
-              <i class="fas fa-check-circle fa-3x text-success mb-3"></i>
-              <p>Thank you for your purchase!</p>
-              <p><strong>Transaction ID:</strong> #TXN123456</p>
-            </div>
-            <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal"> <a href="profile.html">Continue</a></button> <!-- data -bs-dissmiss use to hide-->
-          </div>
-        </div>
-      </div>
-    </div>
-
-
  </div>
  </div>
  </section>
