@@ -112,7 +112,7 @@
     <body>
         <div class="border">
         <h3>Contact Us</h3><br>
-        <form action="homepage.html">
+        <form id="submit">
             <label class="text" for="name">Name:</label><br><br>
             <input class="input" type="text" required placeholder="Enter Your Name"><br><br>
             <label class="text" for="email">Emial Address:</label><br><br>
@@ -131,7 +131,13 @@
     </div>
     </body>
 
-   
+   <script>
+    document.getElementById("submit").addEventListener("submit",function(event){
+        event.preventDefault()
+        alert("✅ Your query has been submitted successfully.")
+        window.location.href="homepage.html"
+    })
+   </script>
     
 
 </body>
