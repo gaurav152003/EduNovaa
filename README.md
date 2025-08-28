@@ -4,12 +4,6 @@ EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS
 
 ---
 
-## 🌐 Live Demo
-
-🔗 [EduNova – Live Website](https://gaurav152003.github.io/EduNovaa/)
-
----
-
 ## ✨ Features
 
 - **Responsive and Mobile-Friendly UI**
@@ -36,6 +30,12 @@ EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS
 
 ---
 
+## 🌐 Live Demo
+
+🔗 [EduNova – Live Website](https://gaurav152003.github.io/EduNovaa/)
+
+---
+
 ## ⚡ Optimization
 
 - Fully responsive across all screen sizes (desktop, tablet, mobile)   
@@ -44,21 +44,12 @@ EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS
 
 ---
 
-## 🚀 Deployment
-
-Deployed using **GitHub Pages**.  
-🔗 [Live Demo](https://gaurav152003.github.io/EduNovaa/)
-
----
 
 ## 📸 Screenshots
 
 ### 💻 Desktop View  
-```markdown
 ![Desktop View](images/desktop-view.png)
-
 ### 💻 Mobile View  
-```markdown
 ![Desktop View](images/desktop-view.png)
 
 ---
