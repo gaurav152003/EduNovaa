@@ -779,20 +779,15 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 .card-container2 p{
     margin-left: auto;
 }
-
-/* #tidio-chat-iframe {
-    bottom: 70px ;  
-    right: 100px ;   
-  } */
-   @media (max-width: 480px) {
-  #tidio-chat-iframe {
-    bottom: 10px;
-    right: 10px;
-    width: 90%; ;
-    max-width: 360px ;
-    height: 60% ;
+ #tidio-chat-iframe {
+    bottom: 80px;   /* lift it up (increase number to go higher) */
+    right: 15px;    /* keep it on the right */
+    width: 90%;
+    max-width: 380px;
+    height: 65%;
   }
-}
+
+
 }
 
 
