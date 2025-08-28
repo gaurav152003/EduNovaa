@@ -779,7 +779,7 @@ nav .dropdown-toggle:hover { /* for explore and business hover*/
 .card-container2 p{
     margin-left: auto;
 }
- #tidio-chat-iframe {
+#tidio-chat-iframe {
     bottom: 80px;   /* lift it up (increase number to go higher) */
     right: 15px;    /* keep it on the right */
     width: 90%;
