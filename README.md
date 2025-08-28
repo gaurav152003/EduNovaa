@@ -1,6 +1,6 @@
 # 🎓 EduNova – Online Learning Platform
 
-A responsive online learning platform built using **HTML, CSS, Bootstrap, and Font Awesome**, designed to provide a seamless course browsing and enrollment experience.
+A responsive online learning platform built using **HTML, CSS, Bootstrap, and JavaScript**, designed to provide a seamless course browsing and enrollment experience.
 
 ---
 
@@ -9,7 +9,12 @@ A responsive online learning platform built using **HTML, CSS, Bootstrap, and Fo
 - **Frontend:** HTML, CSS, Bootstrap, JavaScript  
 
 ---
+## 🚀 Deployment
 
+Deployed using **[Github]**  
+🔗 **Live Demo:** [EduNova Live]( https://gaurav152003.github.io/EduNovaa/) _(replace with your link)_  
+
+---
 ## ⚡ Optimization
 
 - Responsive design for all screen sizes  
@@ -19,12 +24,6 @@ A responsive online learning platform built using **HTML, CSS, Bootstrap, and Fo
 
 ---
 
-## 🚀 Deployment
-
-Deployed using **[Github]**  
-🔗 **Live Demo:** [EduNova Live]( https://gaurav152003.github.io/EduNovaa/) _(replace with your link)_  
-
----
 
 ## 📸 Screenshots
 
