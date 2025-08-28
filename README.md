@@ -1,21 +1,21 @@
 # 🎓 EduNova – Online Learning Platform
 
-EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS, Bootstrap, and JavaScript**, offering a responsive and modern interface for browsing, enrolling, and exploring online courses.
+EduNova is an e-learning platform inspired by Udemy, built using **HTML, CSS, Bootstrap, and JavaScript**, offering a responsive and modern interface for browsing, enrolling, and exploring online courses.
 
 ---
 
 ## ✨ Features
 
-- **Responsive and Mobile-Friendly UI**
-- **Modern UI with Custom CSS Enhancements**
-- **🤖 Integrated Chatbot for instant student support and guidance**
-- **Carousel for Promotions**
-- **Reviews & Testimonials**
-- **Header with Navigation**
+- Responsive and Mobile-Friendly UI
+- Modern UI with Custom CSS Enhancements
+- 🤖 Integrated Chatbot for instant student support and guidance
+- Carousel for Promotions
+- Reviews & Testimonials
+- Header with Navigation
   - Login, Signup, Courses, Plans & Pricing, Teach on EduNova, My Profile
-- **Subscription Offers**
-- **Course sections with Buy/Add-to-Cart buttons**
-- **Footer with Links**
+- Subscription Offers
+- Course sections with Buy/Add-to-Cart buttons
+- Footer with Links
   - About, Careers, Blog, Help, Terms, Privacy
 
 ---
@@ -29,6 +29,7 @@ EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS
 - Deployed on **GitHub Pages**
 
 ---
+
 
 ## 🌐 Live Demo
 
