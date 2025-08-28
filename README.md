@@ -1,56 +1,69 @@
 # 🎓 EduNova – Online Learning Platform
 
-A responsive online learning platform built using **HTML, CSS, Bootstrap, and JavaScript**, designed to provide a seamless course browsing and enrollment experience.
+EduNova is a responsive and modern **online learning platform** built using **HTML, CSS, Bootstrap, and JavaScript**.  
+It provides an intuitive interface for browsing courses, exploring categories, and learning new skills with ease.
+
+---
+
+## 🌐 Live Demo
+
+🔗 [EduNova – Live Website](https://gaurav152003.github.io/EduNovaa/)
+
+---
+
+## ✨ Features
+
+- **Responsive and Mobile-Friendly UI**
+- **Header with Navigation**
+  - Home, Courses, Plans & Pricing, Teach on EduNova, My Learning
+- **Top Navigation Menu**
+  - Goals: Learn AI, Launch a new career, Prepare for a certification
+  - Categories: Development, Business, IT & Software, Design, Marketing, Freelancing, etc.
+- **Carousel for Promotions**
+- **Skills That Drive You Forward** – Highlighting trending skills
+- **AI Conversation Coach Section**
+- **Subscription Offers**
+- **Career Accelerator Cards**
+- **Popular Courses Section**
+  - Courses with image, title, rating, price, and **Add to Cart / Buy Now** buttons
+- **Trusted Companies Section**
+- **Reviews & Testimonials**
+- **Explore Related Topics Section**
+  - Topics like Data Science, React JS, AWS, JavaScript, Python, Business Analytics, Cloud Computing, and more
+- **AI Leadership Section**
+- **Footer with Links**
+  - About, Careers, Blog, Help, Terms, Privacy, Sitemap
+- **Font Awesome Icons Integration**
+- **Modern UI with Custom CSS Enhancements**
 
 ---
 
 ## 🛠 Tech Stack
 
 - **Frontend:** HTML, CSS, Bootstrap, JavaScript  
+- **Icons:** Font Awesome  
+- **Hosting/Deployment:** GitHub Pages  
 
 ---
-## 🚀 Deployment
 
-Deployed using **[Github]**  
-🔗 **Live Demo:** [EduNova Live]( https://gaurav152003.github.io/EduNovaa/) _(replace with your link)_  
-
----
 ## ⚡ Optimization
 
-- Responsive design for all screen sizes  
-- Optimized use of Bootstrap grid for layout  
-- Custom CSS for better UI enhancements  
-- Lightweight and fast-loading pages  
+- Fully responsive across all screen sizes (desktop, tablet, mobile)  
+- Optimized use of **Bootstrap Grid System** for clean layout  
+- Lightweight and **fast-loading pages**  
+- Custom CSS for improved **UI/UX and color scheme**  
 
 ---
 
+## 🚀 Deployment
+
+Deployed using **GitHub Pages**.  
+🔗 [Live Demo](https://gaurav152003.github.io/EduNovaa/)
+
+---
 
 ## 📸 Screenshots
 
 ### 💻 Desktop View  
-_(Add your desktop screenshot here)_  
-
-### 📱 Mobile View  
-_(Add your mobile screenshot here)_  
-
----
-
-## 🧩 Challenges Faced  
-
-- Designing a consistent color scheme across multiple sections  
-- Ensuring responsiveness across devices  
-- Organizing multiple sections (Courses, Reviews, Career Accelerator) neatly  
-- Improving UI aesthetics with CSS customization  
-
----
-
-## 🔮 Future Improvements  
-
-- Add **user authentication** (login/signup system)  
-- Enable **video course previews**  
-- Add **search and filter** functionality for courses  
-- Payment gateway integration  
-- **Dark mode toggle** for better UX  
-
----
-
+```markdown
+![Desktop View](images/desktop-view.png)
