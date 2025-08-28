@@ -1,7 +1,6 @@
 # 🎓 EduNova – Online Learning Platform
 
-EduNova is a responsive and modern **online learning platform** built using **HTML, CSS, Bootstrap, and JavaScript**.  
-It provides an intuitive interface for browsing courses, exploring categories, and learning new skills with ease.
+EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS, Bootstrap, and JavaScript**, offering a responsive and modern interface for browsing, enrolling, and exploring online courses.
 
 ---
 
