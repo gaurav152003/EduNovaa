@@ -6,8 +6,7 @@ A responsive online learning platform built using **HTML, CSS, Bootstrap, and Fo
 
 ## 🛠 Tech Stack
 
-- **Frontend:** HTML, CSS, Bootstrap, Font Awesome  
-- **Hosting/Deployment:** (e.g., GitHub Pages / Vercel / Netlify – replace with your platform)  
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript  
 
 ---
 
