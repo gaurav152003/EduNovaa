@@ -13,35 +13,32 @@ EduNova is an **e-learning platform inspired by Udemy**, built using **HTML, CSS
 ## ✨ Features
 
 - **Responsive and Mobile-Friendly UI**
-- **Header with Navigation**
-  - Home, Courses, Plans & Pricing, Teach on EduNova, My Learning
-- **Top Navigation Menu**
-  - Goals: Learn AI, Launch a new career, Prepare for a certification
-  - Categories: Development, Business, IT & Software, Design, Marketing, Freelancing, etc.
-- **Carousel for Promotions**
-- **Subscription Offers**
-- **Popular Courses Section**
-  - Courses with image, title, rating, price, and **Add to Cart / Buy Now** buttons
-- **Reviews & Testimonials**
-- **🤖 Integrated Chatbot for instant student support and guidance**
-- **Footer with Links**
-  - About, Careers, Blog, Help, Terms, Privacy, Sitemap
 - **Modern UI with Custom CSS Enhancements**
+- **🤖 Integrated Chatbot for instant student support and guidance**
+- **Carousel for Promotions**
+- **Reviews & Testimonials**
+- **Header with Navigation**
+  - Login, Signup, Courses, Plans & Pricing, Teach on EduNova, My Profile
+- **Subscription Offers**
+- **Course sections with Buy/Add-to-Cart buttons**
+- **Footer with Links**
+  - About, Careers, Blog, Help, Terms, Privacy
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend:** HTML, CSS, Bootstrap, JavaScript  
-- **Icons:** Font Awesome  
-- **Hosting/Deployment:** GitHub Pages  
+- HTML  
+- CSS  
+- Bootstrap  
+- JavaScript
+- Deployed on **GitHub Pages**
 
 ---
 
 ## ⚡ Optimization
 
-- Fully responsive across all screen sizes (desktop, tablet, mobile)  
-- Optimized use of **Bootstrap Grid System** for clean layout  
+- Fully responsive across all screen sizes (desktop, tablet, mobile)   
 - Lightweight and **fast-loading pages**  
 - Custom CSS for improved **UI/UX and color scheme**  
 
@@ -59,3 +56,18 @@ Deployed using **GitHub Pages**.
 ### 💻 Desktop View  
 ```markdown
 ![Desktop View](images/desktop-view.png)
+
+### 💻 Mobile View  
+```markdown
+![Desktop View](images/desktop-view.png)
+
+---
+
+## 🧩 Challenges Faced  
+
+- Designing a consistent color scheme across multiple sections  
+- Ensuring responsiveness across devices  
+- Organizing multiple sections (Courses, Reviews, Career Accelerator) neatly  
+- Improving UI aesthetics with CSS customization  
+
+---
