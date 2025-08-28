@@ -50,7 +50,7 @@ EduNova is an e-learning platform inspired by Udemy, built using **HTML, CSS, Bo
 
 ### 💻 Desktop View  
 ![image alt](https://github.com/gaurav152003/EduNovaa/blob/master/images/desktop%20view.png)
-### 💻 Mobile View  
+### 📱 Mobile View  
 ![image alt](https://github.com/gaurav152003/EduNovaa/blob/master/images/mobile%20view.jpg)
 
 ---
